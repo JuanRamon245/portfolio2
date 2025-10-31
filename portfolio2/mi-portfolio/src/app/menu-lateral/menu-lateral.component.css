@@ -1,0 +1,219 @@
+/* Contenedor del botón y el menú */
+
+.contenedorMenuLateral {
+  position: fixed;
+  top: 2vh;
+  right: 0;
+  height: calc(100vh - 2vh);
+  display: flex;
+  align-items: flex-start;
+  transition: transform 0.4s ease;
+  z-index: 1000;
+}
+
+.contenedorMenuLateral.collapsed {
+  transform: translateX(14vw);
+}
+
+.material-symbols-outlined {
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .material-symbols-outlined {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .material-symbols-outlined {
+    font-size: 5rem;
+  }
+}
+
+/* Menu */
+
+.menu {
+  background: #16181a;
+  width: 24vw;
+  min-width: 18rem;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0.063rem 0 0.75rem 0 #000000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.menu.collapsed {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Logo */
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+/* Animacion del logo */
+
+.logoBoton {
+  position: relative;
+  z-index: 1100;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 7vh;
+  height: 7vh;
+  min-width: 3rem;
+  min-height: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  margin-right: -12rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .logoBoton {
+    position: relative;
+    z-index: 1100;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 7vh;
+    height: 7vh;
+    min-width: 6rem;
+    min-height: 6rem;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+    margin-right: -8rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+/* Objetos del menu */
+
+.menuPrincipal {
+  margin-top: 12vh;
+  list-style: none;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 3vh;
+}
+
+@media (min-width: 768px) {
+ .menuPrincipal {
+    margin-top: 15vh;
+    list-style: none;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menuPrincipal {
+    margin-top: 18vh;
+    list-style: none;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3vh;
+  }
+}
+
+@media (min-width: 1500px) {
+  .menuPrincipal {
+    margin-top: 12vh;
+    list-style: none;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3vh;
+  }
+}
+
+.menuPrincipalObjetos{
+  display: flex;
+  justify-content: center;
+}
+
+.menuPrincipalDireciones {
+  display: flex;
+  align-items: center;
+  margin-right: -2vw;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  max-width: 18rem;
+  color: #f3f3f3;
+  font-family: 'Alfa Slab One', sans-serif;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 0 9rem;
+  letter-spacing: 0.2rem;
+}
+
+.menuPrincipalDirecionesTexto {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .menuPrincipalDirecionesTexto {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menuPrincipalDirecionesTexto {
+    font-size: 2rem;
+  }
+}
+
+/* Actividad encima de un objeto del menu */
+
+.menuPrincipalDireciones:hover,
+.active {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Animacion para la ruleta de ajustes rotarla */
+
+@keyframes giroTriple {
+  0% {
+    transform: rotate(0deg);
+  }
+  33.33% {
+    transform: rotate(180deg);
+  }
+  66.66% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(480deg);
+  }
+}
+
+.material-symbols-outlined.girar {
+  animation: giroTriple 0.7s linear;
+}
