@@ -1,10 +1,11 @@
 import { Component, HostListener, signal } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterOutlet } from '@angular/router';
 import { MenuLateralComponent } from "./menu-lateral/menu-lateral.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MenuLateralComponent],
+  imports: [RouterOutlet, HttpClientModule, MenuLateralComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

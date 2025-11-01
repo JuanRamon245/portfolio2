@@ -177,13 +177,7 @@
   font-size: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .menuPrincipalDirecionesTexto {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .menuPrincipalDirecionesTexto {
     font-size: 2rem;
   }

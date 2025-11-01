@@ -1,0 +1,219 @@
+.perfilContenedor {
+  width: 98vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  box-sizing: border-box;
+}
+
+.filaSuperior {
+  display: flex;
+  justify-content: center; /* centra ambos elementos horizontalmente */
+  align-items: center; /* centra verticalmente */
+  gap: 1rem; /* espacio entre la imagen y el texto */
+  text-align: center;
+}
+
+@media (min-width: 820px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center; /* centra ambos elementos horizontalmente */
+    align-items: center; /* centra verticalmente */
+    gap: 4rem; /* espacio entre la imagen y el texto */
+    height: 20%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1500px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center; /* centra ambos elementos horizontalmente */
+    align-items: center; /* centra verticalmente */
+    gap: 6rem; /* espacio entre la imagen y el texto */
+    height: 20%;
+    text-align: center;
+  }
+}
+
+
+/* ✅ Imagen de perfil perfectamente redonda y responsive */
+.fotoPerfil {
+  position: relative;
+  width: clamp(75px, 8vw, 150px); /* tamaño flexible pero limitado */
+  aspect-ratio: 1 / 1; /* siempre cuadrada */
+  border-radius: 50%;
+  overflow: hidden; /* asegura forma circular */
+  border: 0.3rem solid #fff;
+  box-shadow: 
+    0.4rem 0.4rem 0 rgb(69, 196, 49),
+    0 0 0 #30f37e;
+  flex-shrink: 0; /* evita que se deforme en pantallas pequeñas */
+}
+
+.fotoPerfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nombre {
+  color: white;
+  font-family: 'Alfa Slab One', sans-serif;
+  padding-top: 6vh;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  -webkit-text-stroke: 0.1rem black;
+  text-shadow:
+    0.2rem 0.2rem 0 rgb(69, 196, 49),
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e;
+}
+
+@media (min-width: 820px) {
+  .nombre {
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+    padding-top: 6vh;
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    -webkit-text-stroke: 0.1rem black;
+    text-shadow:
+      0.3rem 0.3rem 0 rgb(69, 196, 49),
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
+  }
+}
+
+@media (min-width: 1500px) {
+  .nombre {
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+    padding-top: 6vh;
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    -webkit-text-stroke: 0.2rem black;
+    text-shadow:
+      0.5rem 0.5rem 0 rgb(69, 196, 49),
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
+  }
+}
+
+.filaInferior {
+  margin-top: 5%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textoBlanco {
+  color: white;
+  margin: 0;
+  line-height: 1.6;
+  margin-block: 1lh;
+}
+
+.colorContrarioDescripciones {
+  color: rgb(51, 194, 29);
+  text-shadow:
+    0 0rem 0rem #7e7e7e,
+    0 0 0rem rgb(192, 192, 192);
+}
+
+.descripcionCorta {
+  font-size: 0.9rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow:
+    0 0.07rem 0.1rem rgb(54, 151, 39),
+    0 0 0.2rem rgb(69, 196, 49);
+  -webkit-text-stroke: 0.04rem black;
+  margin-top: 3vh;
+  padding-bottom: 0.5vh;
+  padding-inline: 3vw;
+}
+
+/* Segunda linea de texto */
+
+.descripcionLarga {
+  background: rgba(22, 24, 26);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1.4rem;
+  width: 90%;
+  margin: 0 auto;
+  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.3rem 0.3rem 0 rgb(69, 196, 49);
+  font-size: 0.8rem;
+  margin-top: 2vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media (min-width: 820px) {
+  .descripcionCorta {
+    font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow:
+      0 0.1rem 0.2rem rgb(54, 151, 39),
+      0 0 0.3rem rgb(69, 196, 49);
+    -webkit-text-stroke: 0.07rem black;
+    margin-top: 0.5vh;
+    padding-bottom: 0.5vh;
+  }
+
+  /* Segunda linea de texto */
+
+  .descripcionLarga {
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    border: 0.1rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.6rem 0.6rem 0 rgb(69, 196, 49);
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
+@media (min-width: 1500px) {
+  .descripcionCorta {
+    font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow:
+      0 0.1rem 0.2rem rgb(54, 151, 39),
+      0 0 0.3rem rgb(69, 196, 49);
+    -webkit-text-stroke: 0.07rem black;
+    margin-top: 0.5vh;
+    padding-bottom: 0.5vh;
+  }
+
+  /* Segunda linea de texto */
+
+  .descripcionLarga {
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 50%;
+    max-width: 1300px;
+    margin: 0 auto;
+    border: 0.1rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.6rem 0.6rem 0 rgb(69, 196, 49);
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
