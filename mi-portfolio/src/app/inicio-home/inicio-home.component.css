@@ -189,16 +189,6 @@
 }
 
 @media (min-width: 1500px) {
-  .descripcionCorta {
-    font-size: 1.6rem;
-    font-family: 'Ubuntu', sans-serif;
-    text-shadow:
-      0 0.1rem 0.2rem rgb(54, 151, 39),
-      0 0 0.3rem rgb(69, 196, 49);
-    -webkit-text-stroke: 0.07rem black;
-    margin-top: 0.5vh;
-    padding-bottom: 0.5vh;
-  }
 
   /* Segunda linea de texto */
 
