@@ -3,10 +3,13 @@
         <app-inicio-home></app-inicio-home>
     </section>
     <section class="slide">
+        <app-inicio-contacto (textoCopiado)="mostrarToast()"></app-inicio-contacto>
+    </section>
+    <section class="slide">
         <app-inicio-home></app-inicio-home>
     </section>
 </div>
 
-<!-- <div *ngIf="toastVisible" class="mensaje fade">
+<div *ngIf="toastVisible" class="mensaje fade">
     Copiado en portapapeles
-</div> -->
+</div>

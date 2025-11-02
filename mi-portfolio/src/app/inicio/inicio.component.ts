@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import Lenis from '@studio-freight/lenis';
 import { InicioHomeComponent } from "../inicio-home/inicio-home.component";
+import { InicioContactoComponent } from "../inicio-contacto/inicio-contacto.component";
 
 @Component({
   selector: 'app-inicio',
-  imports: [HttpClientModule, InicioHomeComponent, CommonModule],
+  imports: [HttpClientModule, InicioHomeComponent, CommonModule, InicioContactoComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
@@ -45,6 +46,16 @@ export class InicioComponent implements AfterViewInit {
     });
 
     window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+
+  toastVisible = false;
+
+  mostrarToast() {
+    console.log("mensaje", 'se ha enviado el toast correctamente');
+    this.toastVisible = true;
+    setTimeout(() => {
+      this.toastVisible = false;
+    }, 3000);
   }
 
 }
