@@ -4,10 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import Lenis from '@studio-freight/lenis';
 import { InicioHomeComponent } from "../inicio-home/inicio-home.component";
 import { InicioContactoComponent } from "../inicio-contacto/inicio-contacto.component";
+import { InicioLineaTemporalComponent } from "../inicio-linea-temporal/inicio-linea-temporal.component";
 
 @Component({
   selector: 'app-inicio',
-  imports: [HttpClientModule, InicioHomeComponent, CommonModule, InicioContactoComponent],
+  imports: [HttpClientModule, InicioHomeComponent, CommonModule, InicioContactoComponent, InicioLineaTemporalComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
