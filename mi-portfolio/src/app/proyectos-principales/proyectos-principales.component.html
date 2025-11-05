@@ -1,0 +1,73 @@
+<div class="perfilContenedor">
+    <div class="filaSuperior">
+        <p class="nombre">Proyectos principales</p>
+    </div>
+    <div class="filaInferior">
+        <div class="contenedorPrincipal">
+            <div class="contenedorBotones">
+                <div class="botonIzquierda" (click)="carrusel.prev()"></div>
+            </div>
+            <div class="contenedorCarrusel">
+                <ngb-carousel #carrusel [interval]="6000" [pauseOnHover]="true" [wrap]="true" [showNavigationArrows]="false" [showNavigationIndicators]="false" (slide)="onSlide($event)">
+                    <ng-template ngbSlide>
+                        <div class="card">
+                            
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div class="card">
+                            
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div class="card">
+                            
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div class="contenedorBotones">
+                <div class="botonDerecha" (click)="carrusel.next()"></div>
+            </div>
+        </div>
+        <div class="señalizador">
+            <div class="indicadores">
+                <div class="indicador" (click)="carrusel.select('ngb-slide-0')" [class.activo]="activeSlide === 0"></div>
+                <div class="indicador" (click)="carrusel.select('ngb-slide-1')" [class.activo]="activeSlide === 1"></div>
+                <div class="indicador" (click)="carrusel.select('ngb-slide-2')" [class.activo]="activeSlide === 2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jose antonio perez de las cuevas-->
+
+<!-- <ng-template ngbSlide *ngFor="let recurso of recursos">
+                <div class="card">
+                <div class="titular">
+                    <span class="titulo">{{ recurso.nombre }}</span>
+                    <a [href]="recurso.enlace" target="_blank" class="botonEnlaceGithub">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="descripcion">
+                    <p class="texto">
+                    {{ recurso.descripcion }}
+                    </p>
+                </div>
+
+                <div class="imagen">
+                    <img [src]="recurso.img" alt="Ilustración">
+                </div>
+
+                <div class="tecnologias">
+                    <img
+                    *ngFor="let tecnologia of recurso.tecnologias"
+                    [src]="tecnologia.logo"
+                    [alt]="tecnologia.nombre"
+                    class="logoTecnologia"
+                    />
+                </div>
+                </div>
+            </ng-template> -->

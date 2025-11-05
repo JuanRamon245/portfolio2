@@ -1,0 +1,699 @@
+.perfilContenedor {
+  width: 98vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  box-sizing: border-box;
+}
+
+.filaSuperior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  width: 100%;
+  background-color: blue;
+}
+
+@media (min-width: 768px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 20%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1500px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    height: 20%;
+    text-align: center;
+  }
+}
+
+.nombre {
+  color: white;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  -webkit-text-stroke: 0.07rem black;
+  text-shadow:
+    0.2rem 0.2rem 0 rgb(69, 196, 49),
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e;
+}
+
+@media (min-width: 768px) {
+  .nombre {
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    -webkit-text-stroke: 0.1rem black;
+    text-shadow:
+      0.3rem 0.3rem 0 rgb(69, 196, 49),
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
+  }
+}
+
+@media (min-width: 1500px) {
+  .nombre {
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    -webkit-text-stroke: 0.15rem black;
+    text-shadow:
+      0.5rem 0.5rem 0 rgb(69, 196, 49),
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
+  }
+}
+
+.filaInferior {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(33, 33, 100);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.contenedorPrincipal {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(177, 95, 75);
+}
+
+.señalizador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(100, 33, 44);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.contenedorBotones {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 100, 83);
+}
+
+/* Botones para viajar con el carrusel */
+.botonIzquierda {
+  margin-left: 40%;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform: rotate(45deg);
+}
+
+.botonDerecha {
+  margin-right: 40%;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform: rotate(225deg);
+}
+
+.botonIzquierda::before,
+.botonIzquierda::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(22, 24, 26);
+  border: 0.08rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.15rem 0.15rem 0 rgb(69, 196, 49);
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.botonDerecha::before,
+.botonDerecha::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(22, 24, 26);
+  border: 0.08rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: -0.15rem -0.15rem 0 rgb(69, 196, 49);
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.botonIzquierda::before {
+  width: 8px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.botonIzquierda::after {
+  height: 8px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.botonDerecha::before {
+  width: 8px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.botonDerecha::after {
+  height: 8px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.botonIzquierda:hover {
+  transform: rotate(45deg) scale(1.3);
+}
+
+.botonDerecha:hover {
+  transform: rotate(225deg) scale(1.3);
+}
+
+.botonIzquierda:hover::before {
+  background-color: rgba(22, 24, 26);
+  border: 0.08rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.15rem 0.15rem 0 rgb(69, 196, 49);
+  z-index: 1;
+}
+
+.botonIzquierda:hover::after {
+  background-color: rgba(22, 24, 26);
+  border: 0.08rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.15rem 0.15rem 0 rgb(69, 196, 49);
+  z-index: 2;
+}
+
+.botonDerecha:hover::before {
+  background-color: rgba(22, 24, 26);
+  border: 0.08rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: -0.15rem -0.15rem 0 rgb(69, 196, 49);
+  z-index: 2;
+}
+
+.botonDerecha:hover::after {
+  background-color: rgba(22, 24, 26);
+  border: 0.08rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: -0.15rem -0.15rem 0 rgb(69, 196, 49);
+  z-index: 1;
+}
+
+.contenedorCarrusel {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(92, 92, 194);
+  overflow: hidden;
+}
+
+.card {
+  width: 14rem;
+  background: rgba(22, 24, 26);
+  backdrop-filter: blur(10px);
+  border-radius: 7px;
+  padding: 2rem;
+  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.3rem 0.3rem 0 rgba(69, 196, 49);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 5rem;
+}
+
+.señalizador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(236, 190, 197);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.indicadores {
+  width: auto;
+  background: rgba(22, 24, 26);
+  backdrop-filter: blur(10px);
+  border-radius: 3px;
+  padding: 0.3rem 0.7rem;
+  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.2rem 0.2rem 0 rgba(69, 196, 49);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+  
+.indicador {
+  width: 1rem;
+  height: 0.2rem;
+  border-radius: 10px;
+  background-color: rgba(233, 236, 232, 0.8);
+  border: 0.1rem rgba(233, 236, 232, 0.8);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+  
+.indicador:hover {
+  transform: scale(1.2);
+}
+  
+.indicador.activo {
+  background-color: rgba(69, 196, 49);
+  border: 0.1rem rgba(69, 196, 49);
+  transform: scale(1.3);
+}
+
+@media (min-width: 768px) {
+  .filaInferior {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(33, 33, 100);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .contenedorBotones {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 100, 83);
+  }
+
+  /* Botones para viajar con el carrusel */
+  .botonIzquierda {
+    margin-left: 40%;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transform: rotate(45deg);
+  }
+
+  .botonDerecha {
+    margin-right: 40%;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transform: rotate(225deg);
+  }
+
+  .botonIzquierda::before,
+  .botonIzquierda::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.25rem 0.25rem 0 rgb(69, 196, 49);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .botonDerecha::before,
+  .botonDerecha::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: -0.25rem -0.25rem 0 rgb(69, 196, 49);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .botonIzquierda::before {
+    width: 12.75px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .botonIzquierda::after {
+    height: 12.75px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .botonDerecha::before {
+    width: 12.75px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .botonDerecha::after {
+    height: 12.75px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .botonIzquierda:hover {
+    transform: rotate(45deg) scale(1.3);
+  }
+
+  .botonDerecha:hover {
+    transform: rotate(225deg) scale(1.3);
+  }
+
+  .botonIzquierda:hover::before {
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.25rem 0.25rem 0 rgb(69, 196, 49);
+    z-index: 1;
+  }
+
+  .botonIzquierda:hover::after {
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.25rem 0.25rem 0 rgb(69, 196, 49);
+    z-index: 2;
+  }
+
+  .botonDerecha:hover::before {
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: -0.25rem -0.25rem 0 rgb(69, 196, 49);
+    z-index: 2;
+  }
+
+  .botonDerecha:hover::after {
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: -0.25rem -0.25rem 0 rgb(69, 196, 49);
+    z-index: 1;
+  }
+
+  .contenedorCarrusel {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(92, 92, 194);
+    overflow: hidden;
+  }
+
+  .card {
+    width: 30.5rem;
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 0.1rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.4rem 0.4rem 0 rgba(69, 196, 49);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 5rem;
+  }
+
+  .indicadores {
+    width: auto;
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.2rem 0.2rem 0 rgba(69, 196, 49);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+    
+  .indicador {
+    width: 1.3rem;
+    height: 0.3rem;
+    border-radius: 10px;
+    background-color: rgba(233, 236, 232, 0.8);
+    border: 0.1rem rgba(233, 236, 232, 0.8);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+    
+  .indicador:hover {
+    transform: scale(1.2);
+  }
+    
+  .indicador.activo {
+    background-color: rgba(69, 196, 49);
+    border: 0.1rem rgba(69, 196, 49);
+    transform: scale(1.3);
+  }
+}
+
+@media (min-width: 1500px) {
+  .filaInferior {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(33, 33, 100);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .contenedorBotones {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 100, 83);
+  }
+
+  /* Botones para viajar con el carrusel */
+  .botonIzquierda {
+    margin-left: 40%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transform: rotate(45deg);
+  }
+
+  .botonDerecha {
+    margin-right: 40%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transform: rotate(225deg);
+  }
+
+  .botonIzquierda::before,
+  .botonIzquierda::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.3rem 0.3rem 0 rgb(69, 196, 49);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .botonDerecha::before,
+  .botonDerecha::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: -0.3rem -0.3rem 0 rgb(69, 196, 49);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .botonIzquierda::before {
+    width: 16px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .botonIzquierda::after {
+    height: 16px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .botonDerecha::before {
+    width: 16px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .botonDerecha::after {
+    height: 16px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .botonIzquierda:hover {
+    transform: rotate(45deg) scale(1.3);
+  }
+
+  .botonDerecha:hover {
+    transform: rotate(225deg) scale(1.3);
+  }
+
+  .botonIzquierda:hover::before {
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.3rem 0.3rem 0 rgb(69, 196, 49);
+    z-index: 1;
+  }
+
+  .botonIzquierda:hover::after {
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.3rem 0.3rem 0 rgb(69, 196, 49);
+    z-index: 2;
+  }
+
+  .botonDerecha:hover::before {
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: -0.3rem -0.3rem 0 rgb(69, 196, 49);
+    z-index: 2;
+  }
+
+  .botonDerecha:hover::after {
+    background-color: rgba(22, 24, 26);
+    border: 0.08rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: -0.3rem -0.3rem 0 rgb(69, 196, 49);
+    z-index: 1;
+  }
+
+  .contenedorCarrusel {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(92, 92, 194);
+    overflow: hidden;
+  }
+
+  .card {
+    width: 30rem;
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 0.1rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 5rem;
+  }
+  
+  .indicadores {
+    width: auto;
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 0.8rem 1.3rem;
+    border: 0.1rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.4rem 0.4rem 0 rgba(69, 196, 49);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+    
+  .indicador {
+    width: 1.6rem;
+    height: 0.5rem;
+    border-radius: 10px;
+    background-color: rgba(233, 236, 232, 0.8);
+    border: 0.1rem rgba(233, 236, 232, 0.8);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+    
+  .indicador:hover {
+    transform: scale(1.2);
+  }
+    
+  .indicador.activo {
+    background-color: rgba(69, 196, 49);
+    border: 0.1rem rgba(69, 196, 49);
+    transform: scale(1.3);
+  }
+}
