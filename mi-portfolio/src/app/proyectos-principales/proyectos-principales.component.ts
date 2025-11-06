@@ -22,7 +22,7 @@ export class ProyectosPrincipalesComponent {
 
   recursos = [
     { 
-      nombre: 'Aplicacion de gestion de restaurantes', 
+      nombre: 'App de gestion de restaurantes', 
       descripcion: 'Aplicacion movil, diseñada para la gestion interna de un local, como puede ser un bar o restaurante, para que se tenga una gestión virtual de las comandas entre los trabajadores.', 
       img: 'undraw_mobile-application_uc2q.svg',
       enlace: 'https://github.com/JuanRamon245/Cocinegocios',
@@ -42,6 +42,7 @@ export class ProyectosPrincipalesComponent {
       nombre: 'Acortador de URLs', 
       descripcion: 'Web con funcion de acortar URLs, introduciondose primero una y luego se proporciona la acortada, pudiendose usar hasta 10 veces y tras esto se eliminará la URL acortada. En este proyecto me encargue yo del Back.', 
       img: 'undraw_building-websites_k2zp.svg',
+      url: 'https://youtube.com',
       enlace: 'https://github.com/JuanRamon245/aplicacionRecortarURLs',
       tecnologias: [
         { 
