@@ -17,14 +17,12 @@
 
 .fotoPerfil {
   position: relative;
-  width: clamp(75px, 8vw, 150px);
+  width: 75px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
-  border: 0.3rem solid #fff;
-  box-shadow: 
-    0.4rem 0.4rem 0 rgb(69, 196, 49),
-    0 0 0 #30f37e;
+  border: 0.3rem solid rgba(68, 214, 44, 0.2);
+  box-shadow: 0.4rem 0.4rem 0 rgb(69, 196, 49);
   flex-shrink: 0; 
 }
 
@@ -43,11 +41,10 @@
   letter-spacing: 0.2rem;
   margin: 0;
   -webkit-text-stroke: 0.07rem black;
-  text-shadow:
-    0.2rem 0.2rem 0 rgb(69, 196, 49),
-    0rem 0rem 0 #30f37e,
-    0rem 0rem 0 #30f37e,
-    0rem 0rem 0 #30f37e;
+  text-shadow: 0.2rem 0.2rem 0 rgb(69, 196, 49),
+        0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
 }
 
 .filaInferior {
@@ -100,11 +97,23 @@
 }
 
 @media (min-width: 768px) {
+  .fotoPerfil {
+    position: relative;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.2rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 0.4rem 0.4rem 0 rgb(69, 196, 49);
+    flex-shrink: 0; 
+  }
+
   .filaSuperior {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 1.2rem;
     height: 20%;
     text-align: center;
   }
@@ -113,8 +122,8 @@
     color: white;
     font-family: 'Alfa Slab One', sans-serif;
     padding-top: 6vh;
-    font-size: 3.2rem;
-    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
     margin: 0;
     -webkit-text-stroke: 0.1rem black;
     text-shadow:
@@ -130,8 +139,9 @@
     text-shadow:
       0 0.1rem 0.2rem rgb(54, 151, 39),
       0 0 0.3rem rgb(69, 196, 49);
-    -webkit-text-stroke: 0.07rem black;
+    -webkit-text-stroke: 0.07rem rgba(68, 214, 44, 0.2);
     margin-top: 0.5vh;
+    padding-inline: 10%;
     padding-bottom: 0.5vh;
   }
 
@@ -150,7 +160,31 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    height: 20%;
+    text-align: center;
+  }
+}
+
 @media (min-width: 1500px) {
+  .fotoPerfil {
+    position: relative;
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.3rem solid rgba(68, 214, 44, 0.2);
+    box-shadow: 
+      0.4rem 0.4rem 0 rgb(69, 196, 49),
+      0 0 0 #30f37e;
+    flex-shrink: 0;
+  }
+  
   .filaSuperior {
     display: flex;
     justify-content: center;
