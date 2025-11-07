@@ -3,9 +3,24 @@ import { Component } from '@angular/core';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 
+interface Tecnologia {
+  nombre: string;
+  logo: string;
+}
+
+interface Recurso {
+  nombre: string;
+  descripcion: string;
+  img: string;
+  enlace: string | null;
+  url: string | null;
+  tecnologias: Tecnologia[];
+}
+
 @Component({
   selector: 'app-proyectos-principales',
   imports: [CommonModule, NgbCarouselModule],
+  standalone: true,
   templateUrl: './proyectos-principales.component.html',
   styleUrl: './proyectos-principales.component.css'
 })
@@ -15,7 +30,6 @@ export class ProyectosPrincipalesComponent {
   activeSlide = 0;
 
   onSlide(event: any) {
-    // event.current es algo como: "ngb-slide-0"
     const index = parseInt(event.current.replace('ngb-slide-', ''), 10);
     this.activeSlide = index;
   }
@@ -26,6 +40,7 @@ export class ProyectosPrincipalesComponent {
       descripcion: 'Aplicacion movil, diseñada para la gestion interna de un local, como puede ser un bar o restaurante, para que se tenga una gestión virtual de las comandas entre los trabajadores.', 
       img: 'undraw_mobile-application_uc2q.svg',
       enlace: 'https://github.com/JuanRamon245/Cocinegocios',
+      url: null,
       tecnologias: [
         { 
           nombre: 'Firebase', 
@@ -42,8 +57,8 @@ export class ProyectosPrincipalesComponent {
       nombre: 'Acortador de URLs', 
       descripcion: 'Web con funcion de acortar URLs, introduciondose primero una y luego se proporciona la acortada, pudiendose usar hasta 10 veces y tras esto se eliminará la URL acortada. En este proyecto me encargue yo del Back.', 
       img: 'undraw_building-websites_k2zp.svg',
-      url: 'https://youtube.com',
       enlace: 'https://github.com/JuanRamon245/aplicacionRecortarURLs',
+      url: 'https://youtube.com',
       tecnologias: [
         { 
           nombre: 'Fork', 
@@ -71,6 +86,7 @@ export class ProyectosPrincipalesComponent {
       descripcion: 'Tienda online, que se puede hacer compras y gestionar el pedido del usuario, pagar y funciones basicas que podria tener una web de estas caracteristicas.', 
       img: 'undraw_website_27ju.svg',
       enlace: 'https://github.com/JuanRamon245/Tienda-online-prototipo',
+      url: null,
       tecnologias: [
         { 
           nombre: 'Fork', 

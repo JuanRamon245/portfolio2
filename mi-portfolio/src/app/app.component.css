@@ -4,4 +4,9 @@ app-menu-lateral {
     right: 30px;
     margin-right: 10px;
     padding: 10px;
+    z-index: 100;
+}
+
+.contenedorPrincipal {
+    z-index: 10;
 }

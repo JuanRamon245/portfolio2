@@ -2,7 +2,7 @@
 .slide {
   width: 100%;
   display: flex;
-  justify-content: center; /* Centra el contenido verticalmente */
+  justify-content: center;
   align-items: center;
   transition: opacity 1s ease, transform 1s ease;
   opacity: 1;

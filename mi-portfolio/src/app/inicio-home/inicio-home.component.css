@@ -9,47 +9,23 @@
 
 .filaSuperior {
   display: flex;
-  justify-content: center; /* centra ambos elementos horizontalmente */
-  align-items: center; /* centra verticalmente */
-  gap: 1rem; /* espacio entre la imagen y el texto */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
 }
 
-@media (min-width: 820px) {
-  .filaSuperior {
-    display: flex;
-    justify-content: center; /* centra ambos elementos horizontalmente */
-    align-items: center; /* centra verticalmente */
-    gap: 4rem; /* espacio entre la imagen y el texto */
-    height: 20%;
-    text-align: center;
-  }
-}
-
-@media (min-width: 1500px) {
-  .filaSuperior {
-    display: flex;
-    justify-content: center; /* centra ambos elementos horizontalmente */
-    align-items: center; /* centra verticalmente */
-    gap: 6rem; /* espacio entre la imagen y el texto */
-    height: 20%;
-    text-align: center;
-  }
-}
-
-
-/* ✅ Imagen de perfil perfectamente redonda y responsive */
 .fotoPerfil {
   position: relative;
-  width: clamp(75px, 8vw, 150px); /* tamaño flexible pero limitado */
-  aspect-ratio: 1 / 1; /* siempre cuadrada */
+  width: clamp(75px, 8vw, 150px);
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  overflow: hidden; /* asegura forma circular */
+  overflow: hidden;
   border: 0.3rem solid #fff;
   box-shadow: 
     0.4rem 0.4rem 0 rgb(69, 196, 49),
     0 0 0 #30f37e;
-  flex-shrink: 0; /* evita que se deforme en pantallas pequeñas */
+  flex-shrink: 0; 
 }
 
 .fotoPerfil img {
@@ -72,40 +48,6 @@
     0rem 0rem 0 #30f37e,
     0rem 0rem 0 #30f37e,
     0rem 0rem 0 #30f37e;
-}
-
-@media (min-width: 820px) {
-  .nombre {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
-    padding-top: 6vh;
-    font-size: 3.2rem;
-    letter-spacing: 0.2rem;
-    margin: 0;
-    -webkit-text-stroke: 0.1rem black;
-    text-shadow:
-      0.3rem 0.3rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
-  }
-}
-
-@media (min-width: 1500px) {
-  .nombre {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
-    padding-top: 6vh;
-    font-size: 4.5rem;
-    letter-spacing: 0.2rem;
-    margin: 0;
-    -webkit-text-stroke: 0.15rem black;
-    text-shadow:
-      0.5rem 0.5rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
-  }
 }
 
 .filaInferior {
@@ -143,8 +85,6 @@
   padding-inline: 3vw;
 }
 
-/* Segunda linea de texto */
-
 .descripcionLarga {
   background: rgba(22, 24, 26);
   backdrop-filter: blur(10px);
@@ -159,7 +99,31 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-@media (min-width: 820px) {
+@media (min-width: 768px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 20%;
+    text-align: center;
+  }
+
+  .nombre {
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+    padding-top: 6vh;
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    -webkit-text-stroke: 0.1rem black;
+    text-shadow:
+      0.3rem 0.3rem 0 rgb(69, 196, 49),
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
+  }
+
   .descripcionCorta {
     font-size: 1.6rem;
     font-family: 'Ubuntu', sans-serif;
@@ -170,8 +134,6 @@
     margin-top: 0.5vh;
     padding-bottom: 0.5vh;
   }
-
-  /* Segunda linea de texto */
 
   .descripcionLarga {
     background: rgba(22, 24, 26);
@@ -189,8 +151,29 @@
 }
 
 @media (min-width: 1500px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    height: 20%;
+    text-align: center;
+  }
 
-  /* Segunda linea de texto */
+  .nombre {
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+    padding-top: 6vh;
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    -webkit-text-stroke: 0.15rem black;
+    text-shadow:
+      0.5rem 0.5rem 0 rgb(69, 196, 49),
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
+  }
 
   .descripcionLarga {
     background: rgba(22, 24, 26);

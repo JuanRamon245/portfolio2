@@ -26,16 +26,16 @@
                             </div>
 
                             <div class="filaInferiorCard">
-                                <div class="tecnologias">
+                                <div class="tecnologias" *ngIf="recurso.tecnologias.length > 0">
                                     <img
                                     *ngFor="let tecnologia of recurso.tecnologias"
-                                    [src]="tecnologia.logo"
-                                    [alt]="tecnologia.nombre"
+                                    [src]="tecnologia?.logo"
+                                    [alt]="tecnologia?.nombre"
                                     class="logoTecnologia"
                                     />
                                 </div>
-                                <div class="enlacesCard">
-                                    <a [href]="recurso.enlace" target="_blank" class="botonEnlace">
+                                <div class="enlacesCard" *ngIf="recurso.enlace || recurso.url">
+                                    <a *ngIf="recurso.enlace" [href]="recurso.enlace" target="_blank" class="botonEnlace">
                                         <i class="fab fa-github"></i>
                                     </a>
                                     <a *ngIf="recurso.url" [href]="recurso.url" target="_blank" class="botonEnlace">

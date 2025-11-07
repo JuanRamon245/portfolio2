@@ -1,1 +1,65 @@
-<p>proyectos-secundarios works!</p>
+<div class="perfilContenedor">
+    <div class="filaSuperior">
+        <p class="nombre">Proyectos secundarios</p>
+    </div>
+    <div class="filaInferior">
+        <div class="contenedorPrincipal">
+            <div class="contenedorBotones">
+                <div class="botonIzquierda" (click)="carrusel.prev()"></div>
+            </div>
+            <div class="contenedorCarrusel">
+                <ngb-carousel #carrusel [interval]="6000" [pauseOnHover]="true" [wrap]="true" [showNavigationArrows]="false" [showNavigationIndicators]="false" (slide)="onSlide($event)">
+                    <ng-template ngbSlide *ngFor="let recurso of recursos">
+                        <div class="card">
+                            <div class="titular">
+                                <span class="titulo">{{ recurso.nombre }}</span>
+                            </div>
+
+                            <div class="descripcion">
+                                <p class="texto">
+                                {{ recurso.descripcion }}
+                                </p>
+                            </div>
+
+                            <div class="imagen">
+                                <img [src]="recurso.img" alt="Ilustración">
+                            </div>
+
+                            <div class="filaInferiorCard">
+                                <div class="tecnologias" *ngIf="recurso.tecnologias.length > 0">
+                                    <img
+                                    *ngFor="let tecnologia of recurso.tecnologias"
+                                    [src]="tecnologia?.logo"
+                                    [alt]="tecnologia?.nombre"
+                                    class="logoTecnologia"
+                                    />
+                                </div>
+                                <div class="enlacesCard" *ngIf="recurso.enlace || recurso.url">
+                                    <a *ngIf="recurso.enlace" [href]="recurso.enlace" target="_blank" class="botonEnlace">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a *ngIf="recurso.url" [href]="recurso.url" target="_blank" class="botonEnlace">
+                                        <i class="material-symbols-outlined">Link</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div class="contenedorBotones">
+                <div class="botonDerecha" (click)="carrusel.next()"></div>
+            </div>
+        </div>
+        <div class="señalizador">
+            <div class="indicadores">
+                <div 
+                class="indicador" 
+                *ngFor="let recurso of recursos; let i = index"
+                (click)="carrusel.select('ngb-slide-' + i)" 
+                [class.activo]="activeSlide === i">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

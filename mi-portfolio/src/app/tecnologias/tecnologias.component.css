@@ -1,82 +1,110 @@
-.tecnologiasContenedor {
+.perfilContenedor {
+  width: 98vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  width: 100%;
+  padding: 2vw;
+  box-sizing: border-box;
 }
 
-/* Cabecera */
-
-.titular {
+.filaSuperior {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
 }
 
-.tituloPagina {
+.nombre {
   color: white;
   font-family: 'Alfa Slab One', sans-serif;
-  font-size: 3.5rem;
+  padding-top: 6vh;
+  font-size: 1.8rem;
   letter-spacing: 0.2rem;
-
-  text-shadow: 0.4rem 0.4rem 0 rgb(69, 196, 49), 0 0 0 #30f37e;
+  margin: 0;
+  -webkit-text-stroke: 0.07rem black;
+  text-shadow:
+    0.2rem 0.2rem 0 rgb(69, 196, 49),
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e,
+    0rem 0rem 0 #30f37e;
 }
 
-/* Espacio para las tecnologias */
+.filaInferior {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5rem;
+}
 
-.tecnologias {
+
+.gridProyectos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-  column-gap: 10rem;
-  justify-items: center;
-  align-items: start;
-
-  position: relative;
-  overflow: visible;
-
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-/* Tarjeta para las tecnologias */
-
-.card {
-  width: 32rem;
-  height: 32rem;
+.itemCuadradoIzquierdo {
   background: rgba(22, 24, 26);
   backdrop-filter: blur(10px);
-  border-radius: 1rem;
-  color: white;
-  padding: 2rem;
-  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  border: 0.1rem solid rgba(69, 196, 49, 0.6);
   box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
-  text-align: center;
+  border-radius: 10px;
+  aspect-ratio: 15 / 17;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  z-index: 1;
+}
 
-  margin-bottom: 1rem;
+.itemCuadradoDerecho {
+  background: rgba(22, 24, 26);
+  backdrop-filter: blur(10px);
+  border: 0.1rem solid rgba(69, 196, 49, 0.6);
+  box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+  border-radius: 10px;
+  aspect-ratio: 15 / 17;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .tipoDesarrollo {
-  display: center;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.5rem;
   font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
-
-/* Contenedor para cada tecnologia */
 
 .desarrollos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  row-gap: 1.5rem;
+  column-gap: 0rem;
+  width: 100%;
+  justify-items: center;
+  align-items: start;
+  align-content: start;
+  height: auto;
 }
-
-/* Tecnologias usadas en cada apartado */
 
 .logoContenedor {
   position: relative;
@@ -86,36 +114,36 @@
 }
 
 .logoTecnologia {
-  padding: 0.5rem;
-  width: 6rem;
-  height: 6rem;
+  width: 3.5rem;
+  height: 3.5rem;
   object-fit: contain;
-  border-radius: 30%;
-  background-color: rgba(255, 255, 255);
+  background-color: white;
+  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  padding: 0.4rem;
   transition: transform 0.3s ease;
-  z-index: 1;
 }
 
 .logoTecnologia:hover {
   transform: scale(1.2);
 }
 
-/* Panel oculto de nivel de conocimiento */
 .panelNivel {
   position: absolute;
   z-index: 2000;
   top: 50%;
-  left: 110%;
+  left: 115%;
   transform: translateY(-50%) scaleX(0);
   transform-origin: left;
-  width: 10rem;
-  height: 6rem;
+  width: 3rem;
+  height: 1.5rem;
   background: rgba(255, 255, 255);
+  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.7rem;
-  border-radius: 1rem;
+  gap: 0.5rem;
+  border-radius: 5px;
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -125,12 +153,11 @@
   opacity: 1;
 }
 
-/* Marcadores de nivel de conocimiento */
 .puntoVerde,
 .puntoNegro {
-  width: 1.8rem;
-  height: 3rem;
-  border-radius: 20%;
+  width: 0.5rem;
+  height: 60%;
+  border-radius: 4rem;
 }
 
 .puntoVerde {
@@ -139,4 +166,263 @@
 
 .puntoNegro {
   background-color: rgba(22, 24, 26);
+}
+
+@media (min-width: 768px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nombre {
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+    padding-top: 3vh;
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    -webkit-text-stroke: 0.1rem black;
+    text-shadow:
+      0.3rem 0.3rem 0 rgb(69, 196, 49),
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
+  }
+
+  .filaInferior {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .gridProyectos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6%;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .itemCuadradoIzquierdo {
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border: 0.1rem solid rgba(69, 196, 49, 0.6);
+    box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+    border-radius: 10px;
+    aspect-ratio: 15/16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.7rem;
+    padding: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    z-index: 1;
+  }
+
+  .itemCuadradoDerecho {
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border: 0.1rem solid rgba(69, 196, 49, 0.6);
+    box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+    border-radius: 10px;
+    aspect-ratio: 15/16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.7rem;
+    padding: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .tipoDesarrollo {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .logoTecnologia {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .desarrollos {
+    row-gap: 1.5rem;
+    column-gap: 0.2rem;
+  }
+
+  .logoTecnologia {
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: contain;
+    background-color: white;
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    padding: 0.4rem;
+    transition: transform 0.3s ease;
+  }
+
+  .panelNivel {
+    position: absolute;
+    z-index: 2000;
+    top: 50%;
+    left: 115%;
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: left;
+    width: 5rem;
+    height: 2.5rem;
+    background: rgba(255, 255, 255);
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .puntoVerde,
+  .puntoNegro {
+    width: 0.7rem;
+    height: 80%;
+    border-radius: 4rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .filaSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    text-align: center;
+  }
+
+  .nombre {
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+    padding-top: 6vh;
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    -webkit-text-stroke: 0.15rem black;
+    text-shadow:
+      0.5rem 0.5rem 0 rgb(69, 196, 49),
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e,
+      0rem 0rem 0 #30f37e;
+  }
+
+  .filaInferior {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15rem;
+  }
+
+  .gridProyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6%;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .itemCuadradoIzquierdo {
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border: 0.1rem solid rgba(69, 196, 49, 0.6);
+    box-shadow: 1rem 1rem 0 rgba(69, 196, 49);
+    border-radius: 10px;
+    aspect-ratio: 15/16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    z-index: 1;
+  }
+
+  .itemCuadradoDerecho {
+    background: rgba(22, 24, 26);
+    backdrop-filter: blur(10px);
+    border: 0.1rem solid rgba(69, 196, 49, 0.6);
+    box-shadow: 1rem 1rem 0 rgba(69, 196, 49);
+    border-radius: 10px;
+    aspect-ratio: 15/16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .tipoDesarrollo {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .desarrollos {
+    row-gap: 3.5rem;
+    column-gap: 0.2rem;
+  }
+
+  .logoTecnologia {
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+    background-color: white;
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    padding: 0.4rem;
+    transition: transform 0.3s ease;
+  }
+
+  .panelNivel {
+    position: absolute;
+    z-index: 2000;
+    top: 50%;
+    left: 115%;
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: left;
+    width: 7rem;
+    height: 4.5rem;
+    background: rgba(255, 255, 255);
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .puntoVerde,
+  .puntoNegro {
+    width: 1rem;
+    height: 70%;
+    border-radius: 4rem;
+  }
 }
