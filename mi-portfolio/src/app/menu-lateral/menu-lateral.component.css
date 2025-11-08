@@ -2,7 +2,7 @@
   position: fixed;
   top: 2vh;
   right: 0;
-  height: calc(100vh - 2vh);
+  height: 98vh;
   display: flex;
   align-items: flex-start;
   transition: transform 0.4s ease;
@@ -92,7 +92,7 @@
   border-radius: 10px;
   transition: all 0.3s ease;
   padding: 0 9rem;
-  letter-spacing: 0.2rem;
+  font-weight: 800;
   z-index: 9998;
 }
 
@@ -103,7 +103,7 @@
 .menuPrincipalDireciones:hover,
 .active {
   background-color: var(--color-1);
-  color: #000;
+  color: var(--negro-2);
   border: 0.1rem solid var(--color-2);
 }
 
@@ -204,10 +204,16 @@
     border-radius: 10px;
     transition: all 0.3s ease;
     padding: 3rem 12rem;
-    letter-spacing: 0.2rem;
   }
 
   .menuPrincipalDirecionesTexto {
     font-size: 2rem;
+  }
+
+  .menuPrincipalDireciones:hover,
+  .active {
+    background-color: var(--color-1);
+    color: var(--negro-2);
+    border: 0.1rem solid var(--color-2);
   }
 }

@@ -16,10 +16,11 @@
   color: var(--blanco-1);
   font-family: var(--Titulo);
   padding-top: 3vh;
-  padding-bottom: 8cqi;
+  padding-bottom: 8vh;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   margin: 0;
+  font-weight: 800;
   -webkit-text-stroke: 0.07rem var(--negro-1);
   text-align: center;
   text-shadow:
@@ -85,9 +86,10 @@
 .titulo {
   color: var(--blanco-1);
   font-family: var(--Titulo);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   text-align: start;
   font-weight: 1;
+  font-weight: 600;
 }
 
 .resaltarLetras {
@@ -98,7 +100,7 @@
   color: var(--blanco-1);
   font-family: var(--Texto);
   text-align: left;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 .filaLinea {
@@ -292,7 +294,6 @@
     color: var(--blanco-1);
     font-family: var(--Titulo);
     font-size: 1.3rem;
-    letter-spacing: 0.2rem;
     text-align: left;
   }
 
@@ -473,7 +474,6 @@
     color: var(--blanco-1);
     font-family: var(--Titulo);
     font-size: 2rem;
-    letter-spacing: 0.2rem;
     text-align: left;
     margin-right: 3rem;
   }
