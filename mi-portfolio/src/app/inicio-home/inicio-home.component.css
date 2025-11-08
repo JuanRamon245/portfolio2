@@ -21,8 +21,8 @@
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
-  border: 0.3rem solid rgba(68, 214, 44, 0.2);
-  box-shadow: 0.4rem 0.4rem 0 rgb(69, 196, 49);
+  border: 0.3rem solid var(--color-2);
+  box-shadow: 0.4rem 0.4rem 0 var(--color-1);
   flex-shrink: 0; 
 }
 
@@ -34,17 +34,17 @@
 }
 
 .nombre {
-  color: white;
-  font-family: 'Alfa Slab One', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Titulo);
   padding-top: 6vh;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   margin: 0;
-  -webkit-text-stroke: 0.07rem black;
-  text-shadow: 0.2rem 0.2rem 0 rgb(69, 196, 49),
-        0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+  -webkit-text-stroke: 0.08rem var(--negro-1);
+  text-shadow: 0.2rem 0.2rem 0 var(--color-1),
+        0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
 }
 
 .filaInferior {
@@ -57,43 +57,43 @@
 }
 
 .textoBlanco {
-  color: white;
+  color: var(--blanco-1);
   margin: 0;
   line-height: 1.6;
   margin-block: 1lh;
 }
 
 .colorContrarioDescripciones {
-  color: rgb(51, 194, 29);
+  color: var(--color-1);
   text-shadow:
-    0 0rem 0rem #7e7e7e,
-    0 0 0rem rgb(192, 192, 192);
+    0 0rem 0rem var(--blanco-1),
+    0 0 0rem var(--blanco-1);
 }
 
 .descripcionCorta {
   font-size: 0.9rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var(--Texto);
   text-shadow:
-    0 0.07rem 0.1rem rgb(54, 151, 39),
-    0 0 0.2rem rgb(69, 196, 49);
-  -webkit-text-stroke: 0.04rem black;
+    0 0.07rem 0.1rem var(--color-1),
+    0 0 0.2rem var(--color-1);
+  -webkit-text-stroke: 0.04rem var(--color-2);
   margin-top: 3vh;
   padding-bottom: 0.5vh;
   padding-inline: 3vw;
 }
 
 .descripcionLarga {
-  background: rgba(22, 24, 26);
+  background: var(--negro-1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 1.4rem;
   width: 90%;
   margin: 0 auto;
-  border: 0.1rem solid rgba(68, 214, 44, 0.2);
-  box-shadow: 0.3rem 0.3rem 0 rgb(69, 196, 49);
+  border: 0.1rem solid var(--color-2);
+  box-shadow: 0.3rem 0.3rem 0 var(--color-1);
   font-size: 0.8rem;
   margin-top: 2vh;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var(--Texto);
 }
 
 @media (min-width: 768px) {
@@ -103,8 +103,8 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
-    border: 0.2rem solid rgba(68, 214, 44, 0.2);
-    box-shadow: 0.4rem 0.4rem 0 rgb(69, 196, 49);
+    border: 0.2rem solid var(--color-2);
+    box-shadow: 0.4rem 0.4rem 0 var(--color-1);
     flex-shrink: 0; 
   }
 
@@ -119,44 +119,44 @@
   }
 
   .nombre {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     padding-top: 6vh;
     font-size: 3rem;
     letter-spacing: 0.1rem;
     margin: 0;
-    -webkit-text-stroke: 0.1rem black;
+    -webkit-text-stroke: 0.1rem var(--negro-1);
     text-shadow:
-      0.3rem 0.3rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+      0.3rem 0.3rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
   }
 
   .descripcionCorta {
     font-size: 1.6rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--Texto);
     text-shadow:
-      0 0.1rem 0.2rem rgb(54, 151, 39),
-      0 0 0.3rem rgb(69, 196, 49);
-    -webkit-text-stroke: 0.07rem rgba(68, 214, 44, 0.2);
+      0 0.1rem 0.2rem var(--color-1),
+      0 0 0.3rem var(--color-1);
+    -webkit-text-stroke: 0.07rem var(--color-2);
     margin-top: 0.5vh;
     padding-inline: 10%;
     padding-bottom: 0.5vh;
   }
 
   .descripcionLarga {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 2rem;
     width: 70%;
     margin: 0 auto;
-    border: 0.1rem solid rgba(68, 214, 44, 0.2);
-    box-shadow: 0.6rem 0.6rem 0 rgb(69, 196, 49);
+    border: 0.1rem solid var(--color-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--color-1);
     font-size: 1.2rem;
     margin-top: 2vh;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--Texto);
   }
 }
 
@@ -178,10 +178,10 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
-    border: 0.3rem solid rgba(68, 214, 44, 0.2);
+    border: 0.3rem solid var(--color-2);
     box-shadow: 
-      0.4rem 0.4rem 0 rgb(69, 196, 49),
-      0 0 0 #30f37e;
+      0.4rem 0.4rem 0 var(--color-1),
+      0 0 0 var(--color-1);
     flex-shrink: 0;
   }
   
@@ -195,32 +195,32 @@
   }
 
   .nombre {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     padding-top: 6vh;
     font-size: 4.5rem;
     letter-spacing: 0.2rem;
     margin: 0;
-    -webkit-text-stroke: 0.15rem black;
+    -webkit-text-stroke: 0.15rem var(--negro-1);
     text-shadow:
-      0.5rem 0.5rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+      0.5rem 0.5rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
   }
 
   .descripcionLarga {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 2rem;
     width: 50%;
     max-width: 1300px;
     margin: 0 auto;
-    border: 0.1rem solid rgba(68, 214, 44, 0.2);
-    box-shadow: 0.6rem 0.6rem 0 rgb(69, 196, 49);
+    border: 0.1rem solid var(--color-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--color-1);
     font-size: 1.2rem;
     margin-top: 2vh;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--Texto);
   }
 }

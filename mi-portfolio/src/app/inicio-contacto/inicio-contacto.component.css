@@ -12,29 +12,29 @@
 }
 
 .tituloPagina {
-  color: white;
-  font-family: 'Alfa Slab One', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Titulo);
   padding-top: 3vh;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   margin: 0;
-  -webkit-text-stroke: 0.07rem black;
+  -webkit-text-stroke: 0.07rem var(--negro-1);
   text-shadow:
-    0.2rem 0.2rem 0 rgb(69, 196, 49),
-    0rem 0rem 0 #30f37e,
-    0rem 0rem 0 #30f37e,
-    0rem 0rem 0 #30f37e;
+    0.2rem 0.2rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1);
 }
 
 .enlacesContenedor {
-  background: rgba(22, 24, 26);
+  background: var(--negro-1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 0.7rem;
   width: auto;
   margin: 0 auto;
-  border: 0.08rem solid rgba(68, 214, 44, 0.2);
-  box-shadow: 0.3rem 0.3rem 0 rgb(69, 196, 49);
+  border: 0.08rem solid var(--color-2);
+  box-shadow: 0.3rem 0.3rem 0 var(--color-1);
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
@@ -47,23 +47,23 @@
 }
 
 .titulo {
-  color: white;
-  font-family: 'Alfa Slab One', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Titulo);
   font-size: 0.7rem;
   letter-spacing: 0.1rem;
   text-align: left;
 }
 
 .informacionContenedor {
-  background: rgb(19, 20, 23);
+  background: var(--negro-1);
   border-radius: 7px;
   padding: 0.4rem 0.6rem;
-  color: white;
-  font-family: 'Ubuntu', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Texto);
   font-size: 0.5rem;
   letter-spacing: 0.05rem;
-  border: 0.1rem solid rgb(7, 8, 9);
-  box-shadow: 0.3rem 0.3rem 0 rgb(13, 13, 15);
+  border: 0.1rem solid var(--negro-2);
+  box-shadow: 0.3rem 0.3rem 0 var(--negro-2);
 }
 
 .material-symbols-outlined {
@@ -81,23 +81,21 @@
 
 .informacionContenedor.simbolos:hover {
   transition: all 0.5s ease;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--blanco-1);
+  color: var(--negro-2);
 }
-
-/* contenedores especificos para linkedin y github */
 
 .contenedorEnlaces {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  background: rgb(19, 20, 23);
+  background: var(--negro-1);
   backdrop-filter: blur(10px);
   border-radius: 7px;
-  border: 0.1rem solid rgb(7, 8, 9);
-  box-shadow: 0.3rem 0.3rem 0 rgb(13, 13, 15);
-  color: white;
-  font-family: 'Ubuntu', sans-serif;
+  border: 0.1rem solid var(--negro-2);
+  box-shadow: 0.3rem 0.3rem 0 var(--negro-2);
+  color: var(--blanco-1);
+  font-family: var(--Texto);
   font-size:  0.5rem;
   letter-spacing: 0.1rem;
   padding: 0.4rem 0.6rem;
@@ -106,13 +104,13 @@
 
 .contenedorEnlaces a {
   text-decoration: none;
-  color: white;
+  color: var(--blanco-1);
   font-weight: 500;
 }
 
 .contenedorEnlaces.linkedin {
   border-color: #0077b5;
-  color: white;
+  color: var(--blanco-1);
 }
 
 .contenedorEnlaces.linkedin i {
@@ -122,7 +120,7 @@
 
 .contenedorEnlaces.github {
   border-color: #6e5494;
-  color: white;
+  color: var(--blanco-1);
 }
 
 .contenedorEnlaces.github i {
@@ -131,52 +129,52 @@
 }
 
 .contenedorEnlaces.github:hover {
-  border-color: white;
+  border-color: var(--blanco-1);
   background: #6e5494;
   transition: all 0.5s ease;
 }
 
 .contenedorEnlaces.github:hover i {
-  color: white;
+  color: var(--blanco-1);
   transition: all 0.5s ease;
 }
 
 .contenedorEnlaces.linkedin:hover {
-  border-color: white;
+  border-color: var(--blanco-1);
   background: #0077b5;
   transition: all 0.5s ease;
 }
 
 .contenedorEnlaces.linkedin:hover i {
-  color: white;
+  color: var(--blanco-1);
   transition: all 0.5s ease;
 }
 
 @media (min-width: 768px) {
   .tituloPagina {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     padding-top: 3vh;
     font-size: 3.2rem;
     letter-spacing: 0.2rem;
     margin: 0;
-    -webkit-text-stroke: 0.1rem black;
+    -webkit-text-stroke: 0.1rem var(--negro-1);
     text-shadow:
-      0.3rem 0.3rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+      0.3rem 0.3rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
   }
 
   .enlacesContenedor {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 2rem;
     width: auto;
     margin: 0 auto;
-    border: 0.1rem solid rgba(68, 214, 44, 0.2);
-    box-shadow: 0.6rem 0.6rem 0 rgb(69, 196, 49);
+    border: 0.1rem solid var(--color-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--color-1);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -190,23 +188,23 @@
   }
 
   .titulo {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
     text-align: left;
   }
 
   .informacionContenedor {
-    background: rgb(19, 20, 23);
+    background: var(--negro-1);
     border-radius: 10px;
     padding: 1rem 1.5rem;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Texto);
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    border: 0.1rem solid rgb(7, 8, 9);
-    box-shadow: 0.6rem 0.6rem 0 rgb(13, 13, 15);
+    border: 0.1rem solid var(--negro-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--negro-2);
   }
 
   .material-symbols-outlined {
@@ -217,13 +215,13 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    background: rgb(19, 20, 23);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 0.1rem solid rgb(7, 8, 9);
-    box-shadow: 0.6rem 0.6rem 0 rgb(13, 13, 15);
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+    border: 0.1rem solid var(--negro-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--negro-2);
+    color: var(--blanco-1);
+    font-family: var(--Texto);
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     padding: 1rem 1.5rem;
@@ -243,30 +241,30 @@
 
 @media (min-width: 1500px) {
   .tituloPagina {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     padding-top: 3vh;
     padding-bottom: 3vh;
     font-size: 4.5rem;
     letter-spacing: 0.2rem;
     margin: 0;
-    -webkit-text-stroke: 0.15rem black;
+    -webkit-text-stroke: 0.15rem var(--negro-2);
     text-shadow:
-      0.5rem 0.5rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+      0.5rem 0.5rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
   }
 
   .enlacesContenedor {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 4rem;
     width: auto;
     margin: 0 auto;
-    border: 0.1rem solid rgba(68, 214, 44, 0.2);
-    box-shadow: 0.6rem 0.6rem 0 rgb(69, 196, 49);
+    border: 0.1rem solid var(--color-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--color-1);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -280,8 +278,8 @@
   }
 
   .titulo {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     font-size: 2rem;
     letter-spacing: 0.2rem;
     text-align: left;
@@ -289,15 +287,15 @@
   }
 
   .informacionContenedor {
-    background: rgb(19, 20, 23);
+    background: var(--negro-1);
     border-radius: 10px;
     padding: 1rem 1.5rem;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Texto);
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
-    border: 0.1rem solid rgb(7, 8, 9);
-    box-shadow: 0.6rem 0.6rem 0 rgb(13, 13, 15);
+    border: 0.1rem solid var(--negro-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--negro-2);
     margin-right: 1.5rem;
   }
 
@@ -309,13 +307,13 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    background: rgb(19, 20, 23);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 0.1rem solid rgb(7, 8, 9);
-    box-shadow: 0.6rem 0.6rem 0 rgb(13, 13, 15);
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+    border: 0.1rem solid var(--negro-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--negro-2);
+    color: var(--blanco-1);
+    font-family: var(--Texto);
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
     padding: 1rem 1.5rem;

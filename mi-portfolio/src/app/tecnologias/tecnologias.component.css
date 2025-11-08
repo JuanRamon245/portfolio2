@@ -16,18 +16,18 @@
 }
 
 .nombre {
-  color: white;
-  font-family: 'Alfa Slab One', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Titulo);
   padding-top: 6vh;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   margin: 0;
-  -webkit-text-stroke: 0.07rem black;
+  -webkit-text-stroke: 0.07rem var(--negro-1);
   text-shadow:
-    0.2rem 0.2rem 0 rgb(69, 196, 49),
-    0rem 0rem 0 #30f37e,
-    0rem 0rem 0 #30f37e,
-    0rem 0rem 0 #30f37e;
+    0.2rem 0.2rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1);
 }
 
 .filaInferior {
@@ -49,10 +49,10 @@
 }
 
 .itemCuadradoIzquierdo {
-  background: rgba(22, 24, 26);
+  background: var(--negro-1);
   backdrop-filter: blur(10px);
-  border: 0.1rem solid rgba(69, 196, 49, 0.6);
-  box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+  border: 0.1rem solid var(--color-1);
+  box-shadow: 0.6rem 0.6rem 0 var(--color-1);
   border-radius: 10px;
   aspect-ratio: 15 / 17;
   display: flex;
@@ -61,18 +61,18 @@
   justify-content: flex-start;
   gap: 0.5rem;
   padding: 0.5rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var(--Texto);
   font-size: 1.2rem;
-  color: white;
+  color: var(--blanco-1);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   z-index: 1;
 }
 
 .itemCuadradoDerecho {
-  background: rgba(22, 24, 26);
+  background: var(--negro-1);
   backdrop-filter: blur(10px);
-  border: 0.1rem solid rgba(69, 196, 49, 0.6);
-  box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+  border: 0.1rem solid var(--color-1);
+  box-shadow: 0.6rem 0.6rem 0 var(--color-1);
   border-radius: 10px;
   aspect-ratio: 15 / 17;
   display: flex;
@@ -81,9 +81,9 @@
   justify-content: flex-start;
   gap: 0.5rem;
   padding: 0.5rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var(--Texto);
   font-size: 1.2rem;
-  color: white;
+  color: var(--blanco-1);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -117,8 +117,8 @@
   width: 3.5rem;
   height: 3.5rem;
   object-fit: contain;
-  background-color: white;
-  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+  background-color: var(--blanco-1);
+  box-shadow: 0 0 20px 6px var(--negro-2);
   border-radius: 8px;
   padding: 0.4rem;
   transition: transform 0.3s ease;
@@ -137,8 +137,8 @@
   transform-origin: left;
   width: 3rem;
   height: 1.5rem;
-  background: rgba(255, 255, 255);
-  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+  background: var(--blanco-1);
+  box-shadow: 0 0 20px 6px var(--negro-2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,11 +161,11 @@
 }
 
 .puntoVerde {
-  background-color: rgba(69, 196, 49);
+  background-color: var(--color-1);
 }
 
 .puntoNegro {
-  background-color: rgba(22, 24, 26);
+  background-color: var(--negro-1);
 }
 
 @media (min-width: 768px) {
@@ -177,18 +177,18 @@
   }
 
   .nombre {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     padding-top: 3vh;
     font-size: 3.2rem;
     letter-spacing: 0.2rem;
     margin: 0;
-    -webkit-text-stroke: 0.1rem black;
+    -webkit-text-stroke: 0.1rem var(--negro-1);
     text-shadow:
-      0.3rem 0.3rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+      0.3rem 0.3rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
   }
 
   .filaInferior {
@@ -207,10 +207,10 @@
   }
 
   .itemCuadradoIzquierdo {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
-    border: 0.1rem solid rgba(69, 196, 49, 0.6);
-    box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+    border: 0.1rem solid var(--color-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--color-1);
     border-radius: 10px;
     aspect-ratio: 15/16;
     display: flex;
@@ -219,18 +219,18 @@
     justify-content: flex-start;
     gap: 0.7rem;
     padding: 0.8rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--Texto);
     font-size: 1.4rem;
-    color: white;
+    color: var(--blanco-1);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     z-index: 1;
   }
 
   .itemCuadradoDerecho {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
-    border: 0.1rem solid rgba(69, 196, 49, 0.6);
-    box-shadow: 0.6rem 0.6rem 0 rgba(69, 196, 49);
+    border: 0.1rem solid var(--color-2);
+    box-shadow: 0.6rem 0.6rem 0 var(--color-1);
     border-radius: 10px;
     aspect-ratio: 15/16;
     display: flex;
@@ -239,9 +239,9 @@
     justify-content: flex-start;
     gap: 0.7rem;
     padding: 0.8rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--Texto);
     font-size: 1.4rem;
-    color: white;
+    color: var(--blanco-1);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
   }
 
@@ -264,8 +264,8 @@
     width: 4.5rem;
     height: 4.5rem;
     object-fit: contain;
-    background-color: white;
-    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+    background-color: var(--blanco-1);
+    box-shadow: 0 0 20px 6px var(--negro-2);
     border-radius: 8px;
     padding: 0.4rem;
     transition: transform 0.3s ease;
@@ -280,8 +280,8 @@
     transform-origin: left;
     width: 5rem;
     height: 2.5rem;
-    background: rgba(255, 255, 255);
-    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+    background: var(--blanco-1);
+    box-shadow: 0 0 20px 6px var(--negro-2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,18 +309,18 @@
   }
 
   .nombre {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     padding-top: 6vh;
     font-size: 4.5rem;
     letter-spacing: 0.2rem;
     margin: 0;
-    -webkit-text-stroke: 0.15rem black;
+    -webkit-text-stroke: 0.15rem var(--negro-1);
     text-shadow:
-      0.5rem 0.5rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+      0.5rem 0.5rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
   }
 
   .filaInferior {
@@ -340,10 +340,10 @@
   }
 
   .itemCuadradoIzquierdo {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
-    border: 0.1rem solid rgba(69, 196, 49, 0.6);
-    box-shadow: 1rem 1rem 0 rgba(69, 196, 49);
+    border: 0.1rem solid var(--color-2);
+    box-shadow: 1rem 1rem 0 var(--color-1);
     border-radius: 10px;
     aspect-ratio: 15/16;
     display: flex;
@@ -352,18 +352,18 @@
     justify-content: flex-start;
     gap: 1.5rem;
     padding: 1.5rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--Texto);
     font-size: 2.5rem;
-    color: white;
+    color: var(--blanco-1);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     z-index: 1;
   }
 
   .itemCuadradoDerecho {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     backdrop-filter: blur(10px);
-    border: 0.1rem solid rgba(69, 196, 49, 0.6);
-    box-shadow: 1rem 1rem 0 rgba(69, 196, 49);
+    border: 0.1rem solid var(--color-2);
+    box-shadow: 1rem 1rem 0 var(--color-1);
     border-radius: 10px;
     aspect-ratio: 15/16;
     display: flex;
@@ -372,9 +372,9 @@
     justify-content: flex-start;
     gap: 1.5rem;
     padding: 1.5rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--Texto);
     font-size: 2.5rem;
-    color: white;
+    color: var(--blanco-1);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
   }
 
@@ -392,8 +392,8 @@
     width: 7rem;
     height: 7rem;
     object-fit: contain;
-    background-color: white;
-    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+    background-color: var(--blanco-1);
+    box-shadow: 0 0 20px 6px var(--negro-2);
     border-radius: 8px;
     padding: 0.4rem;
     transition: transform 0.3s ease;
@@ -408,8 +408,8 @@
     transform-origin: left;
     width: 7rem;
     height: 4.5rem;
-    background: rgba(255, 255, 255);
-    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.75);
+    background: var(--blanco-1);
+    box-shadow: 0 0 20px 6px var(--negro-2);
     display: flex;
     justify-content: center;
     align-items: center;

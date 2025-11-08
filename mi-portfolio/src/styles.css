@@ -14,13 +14,20 @@ html.lenis {
 
 :root {
   --size: 20px;
+  --color-1: rgb(95, 165, 245);
+  --color-2: rgba(95, 165, 245, 0.25);
+  --negro-1: rgba(22, 24, 26);
+  --negro-2: rgb(7, 7, 7);
+  --blanco-1: rgb(238, 242, 250);
+  --Titulos: "Oswald", sans-serif;
+  --Texto: "Lato", sans-serif;
 }
 
 body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background: rgb(15 15 15);
+  background: var(--negro-2);
 }
 
 .background {
@@ -32,15 +39,15 @@ body {
   z-index: -1;
   background: conic-gradient(
     from 180deg at 50% 70%,
-    hsla(0,0%,98%,1) 0deg,
-    rgb(51, 194, 29) 72deg,
-    rgb(51, 194, 29) 144deg,
-    rgb(51, 194, 29) 216deg,
-    rgb(51, 194, 29) 288deg,
-    hsla(0,0%,98%,1) 1turn
+    var(--blanco-1) 0deg,
+    var(--color-1) 72deg,
+    var(--color-1) 144deg,
+    var(--color-1) 216deg,
+    var(--color-1) 288deg,
+    var(--blanco-1) 1turn
   );
   mask:
-    radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% / var(--size) var(--size),
+    radial-gradient(circle at 50% 50%, var(--blanco-1) 2px, transparent 2.5px) 50% 50% / var(--size) var(--size),
     url("assets/aset.webp") 256px 50% / 256px 256px;
   mask-composite: intersect;
   animation: flicker 20s infinite linear;
@@ -67,7 +74,7 @@ body {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: white;
+  background: var(--blanco-1);
   opacity: 0.8;
   border-radius: 2px;
   animation: fall 6s linear infinite;

@@ -18,13 +18,13 @@
 }
 
 .menu {
-  background: #16181a;
+  background: var(--negro-1);
   width: 24vw;
   min-width: 18rem;
   height: 100%;
   border-radius: 1rem 0 0 1rem;
-  border: 0.1rem solid rgba(69, 196, 49, 0.6);
-  box-shadow: 0.063rem 0 0.75rem 0 #000000;
+  border: 0.1rem solid var(--color-1);
+  box-shadow: 0.063rem 0 0.75rem 0 var(--negro-2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -45,23 +45,22 @@
 .logoBoton {
   position: relative;
   z-index: 1100;
-  background: rgba(22, 24, 26);
+  background: var(--negro-1);
   border: none;
   border-radius: 10px;
   width: 7vh;
   height: 7vh;
   min-width: 3rem;
   min-height: 3rem;
-  font-family: 'Ubuntu', sans-serif;
   cursor: pointer;
-  border: 0.1rem solid rgba(69, 196, 49, 0.6);
+  border: 0.1rem solid var(--color-2);
   margin-right: -12rem;
   margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  box-shadow: 0.3rem 0.3rem 0 rgba(69, 196, 49);
+  color: var(--blanco-1);
+  box-shadow: 0.3rem 0.3rem 0 var(--color-1);
 }
 
 .menuPrincipal {
@@ -87,8 +86,8 @@
   height: 4rem;
   width: 100%;
   max-width: 18rem;
-  color: #f3f3f3;
-  font-family: 'Alfa Slab One', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Titulo);
   text-decoration: none;
   border-radius: 10px;
   transition: all 0.3s ease;
@@ -103,9 +102,9 @@
 
 .menuPrincipalDireciones:hover,
 .active {
-  background-color: rgba(69, 196, 49);
+  background-color: var(--color-1);
   color: #000;
-  border: 0.1rem solid rgba(69, 196, 49, 0.6);
+  border: 0.1rem solid var(--color-2);
 }
 
 @keyframes giroTriple {
@@ -135,23 +134,22 @@
   .logoBoton {
     position: relative;
     z-index: 1100;
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     border: none;
     border-radius: 10px;
     width: 7vh;
     height: 7vh;
     min-width: 6rem;
     min-height: 6rem;
-    font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
-    border: 0.1rem solid rgba(69, 196, 49, 0.6);
+    border: 0.1rem solid var(--color-2);
     margin-right: -8rem;
     margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    box-shadow: 0.3rem 0.3rem 0 rgba(69, 196, 49);
+    color: var(--blanco-1);
+    box-shadow: 0.3rem 0.3rem 0 var(--color-1);
   }
 
  .menuPrincipal {
@@ -200,8 +198,8 @@
     height: 4rem;
     width: 100%;
     max-width: 18rem;
-    color: #f3f3f3;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.3s ease;

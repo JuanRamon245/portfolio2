@@ -13,20 +13,20 @@
 }
 
 .tituloPagina {
-  color: white;
-  font-family: 'Alfa Slab One', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Titulo);
   padding-top: 3vh;
   padding-bottom: 8cqi;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   margin: 0;
-  -webkit-text-stroke: 0.07rem black;
+  -webkit-text-stroke: 0.07rem var(--negro-1);
   text-align: center;
   text-shadow:
-    0.2rem 0.2rem 0 rgb(69, 196, 49),
-    0rem 0rem 0 #30f37e,
-    0rem 0rem 0 #30f37e,
-    0rem 0rem 0 #30f37e;
+    0.2rem 0.2rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1),
+    0rem 0rem 0 var(--color-1);
 }
 
 .linea {
@@ -65,12 +65,12 @@
 }
 
 .enlacesContenedor {
-  background: rgba(22, 24, 26);
+  background: var(--negro-1);
   border-radius: 7px;
   padding: 0.5rem;
   width: auto;
-  border: 0.08rem solid rgba(68, 214, 44, 0.2);
-  box-shadow: 0.2rem 0.2rem 0 rgb(69, 196, 49);
+  border: 0.08rem solid var(--color-2);
+  box-shadow: 0.2rem 0.2rem 0 var(--color-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,20 +83,20 @@
 }
 
 .titulo {
-  color: white;
-  font-family: 'Alfa Slab One', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Titulo);
   font-size: 0.7rem;
   text-align: start;
   font-weight: 1;
 }
 
 .resaltarLetras {
-  color: rgb(51, 194, 29);
+  color: var(--color-1);
 }
 
 .textoTrayectorias {
-  color: white;
-  font-family: 'Ubuntu', sans-serif;
+  color: var(--blanco-1);
+  font-family: var(--Texto);
   text-align: left;
   font-size: 0.6rem;
 }
@@ -129,8 +129,8 @@
 .circulo {
   width: 90%;
   aspect-ratio: 1;
-  background: radial-gradient(circle at center, transparent 30%, #22b14c 31%);
-  border: 0.1rem solid rgba(68, 214, 44, 0.2);
+  background: radial-gradient(circle at center, transparent 30%, var(--color-1) 31%);
+  border: 0.1rem solid var(--color-2);
   border-radius: 50%;
   position: relative;
   z-index: 3;
@@ -141,7 +141,7 @@
   margin-top: 0.4rem;
   flex: 1;
   width: 30%;
-  background-color: #22b14c;
+  background-color: var(--color-1);
   border-radius: 10rem;
   z-index: 1;
 }
@@ -155,14 +155,14 @@
   width: 100%;
   margin-top: 15%;
   margin-bottom: 10%;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, var(--negro-2) 0%, var(--negro-2) 100%);
+  mask-image: linear-gradient(to bottom, var(--negro-2) 0%, var(--negro-2) 100%);
   }
   
 .barraFinal {
   width: 30%;
   height: 70%;
-  background-color: #22b14c;
+  background-color: var(--color-1);
   border-radius: 10rem 10rem 0 0;
   z-index: 1;
 }
@@ -177,7 +177,7 @@
 
 .cuadrado {
   aspect-ratio: 1 / 1;
-  background-color: #22b14c;
+  background-color: var(--color-1);
 }
 
 .c1 {
@@ -224,20 +224,20 @@
 
 @media (min-width: 768px) {
   .tituloPagina {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     padding-top: 3vh;
     padding-bottom: 8vh;
     font-size: 3.2rem;
     letter-spacing: 0.2rem;
     margin: 0;
-    -webkit-text-stroke: 0.1rem black;
+    -webkit-text-stroke: 0.1rem var(--negro-1);
     text-align: center;
     text-shadow:
-      0.3rem 0.3rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+      0.3rem 0.3rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
   }
 
   .filaSuperiorIzquierda {
@@ -276,12 +276,12 @@
   }
 
   .enlacesContenedor {
-    background: rgba(22, 24, 26);
+    background: var(--negro-1);
     border-radius: 10px;
     padding: 1rem;
     width: auto;
-    border: 0.08rem solid rgba(68, 214, 44, 0.2);
-    box-shadow: 0.5rem 0.5rem 0 rgb(69, 196, 49);
+    border: 0.08rem solid var(--color-2);
+    box-shadow: 0.5rem 0.5rem 0 var(--color-1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,16 +289,16 @@
   }
 
   .titulo {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     font-size: 1.3rem;
     letter-spacing: 0.2rem;
     text-align: left;
   }
 
   .textoTrayectorias {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Texto);
     text-align: left;
     font-size: 1rem;
   }
@@ -314,8 +314,8 @@
   .circulo {
     width: 80%;
     aspect-ratio: 1;
-    background: radial-gradient(circle at center, transparent 25%, #22b14c 26%);
-    border: 0.1rem solid rgba(68, 214, 44, 0.2);
+    background: radial-gradient(circle at center, transparent 25%, var(--color-1) 26%);
+    border: 0.1rem solid var(--color-2);
     border-radius: 50%;
     position: relative;
     z-index: 3;
@@ -327,7 +327,7 @@
     margin-bottom: 10%;
     flex: 1;
     width: 30%;
-    background-color: #22b14c;
+    background-color: var(--color-1);
     border-radius: 10rem;
     z-index: 1;
   }
@@ -341,14 +341,14 @@
     width: 100%;
     margin-top: 15%;
     margin-bottom: 10%;
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, var(--negro-2) 0%, var(--negro-2) 100%);
+    mask-image: linear-gradient(to bottom, var(--negro-2) 0%, var(--negro-2) 100%);
   }
 
   .barraFinal {
     width: 30%;
     height: 50%;
-    background-color: #22b14c;
+    background-color: var(--color-1);
     border-radius: 10rem 10rem 0 0;
     z-index: 1;
   }
@@ -363,7 +363,7 @@
 
   .cuadrado {
     aspect-ratio: 1 / 1;
-    background-color: #22b14c;
+    background-color: var(--color-1);
   }
 
   .c1 {
@@ -411,20 +411,20 @@
 
 @media (min-width: 1500px) {
   .tituloPagina {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     padding-top: 3vh;
     padding-bottom: 12vh;
     font-size: 4.5rem;
     letter-spacing: 0.2rem;
     margin: 0;
-    -webkit-text-stroke: 0.15rem black;
+    -webkit-text-stroke: 0.15rem var(--negro-1);
     text-align: center;
     text-shadow:
-      0.5rem 0.5rem 0 rgb(69, 196, 49),
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e,
-      0rem 0rem 0 #30f37e;
+      0.5rem 0.5rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1),
+      0rem 0rem 0 var(--color-1);
   }
 
   .filaSuperiorIzquierda {
@@ -457,12 +457,12 @@
   }
 
   .enlacesContenedor {
-    background: rgba(22, 24, 26);
+    background: var(--negro-2);
     border-radius: 10px;
     padding: 2rem;
     width: auto;
-    border: 0.08rem solid rgba(68, 214, 44, 0.2);
-    box-shadow: 0.3rem 0.3rem 0 rgb(69, 196, 49);
+    border: 0.08rem solid var(--color-2);
+    box-shadow: 0.3rem 0.3rem 0 var(--color-1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,8 +470,8 @@
   }
 
   .titulo {
-    color: white;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Titulo);
     font-size: 2rem;
     letter-spacing: 0.2rem;
     text-align: left;
@@ -479,8 +479,8 @@
   }
 
   .textoTrayectorias {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+    color: var(--blanco-1);
+    font-family: var(--Texto);
     text-align: left;
     font-size: 1.2rem;
   }
@@ -488,8 +488,8 @@
   .circulo {
     width: 60%;
     aspect-ratio: 1;
-    background: radial-gradient(circle at center, transparent 25%, #22b14c 26%);
-    border: 0.1rem solid rgba(68, 214, 44, 0.2);
+    background: radial-gradient(circle at center, transparent 25%, var(--color-1) 26%);
+    border: 0.1rem solid var(--color-2);
     border-radius: 50%;
     position: relative;
     z-index: 3;
@@ -501,7 +501,7 @@
     margin-bottom: 5%;
     flex: 1;
     width: 20%;
-    background-color: #22b14c;
+    background-color: var(--color-1);
     border-radius: 10rem;
     z-index: 1;
   }
@@ -509,7 +509,7 @@
   .barraFinal {
     width: 30%;
     height: 50%;
-    background-color: #22b14c;
+    background-color: var(--color-1);
     border-radius: 10rem 10rem 0 0;
     z-index: 1;
   }
@@ -524,7 +524,7 @@
 
   .cuadrado {
     aspect-ratio: 1 / 1;
-    background-color: #22b14c;
+    background-color: var(--color-1);
   }
 
   .c1 {
