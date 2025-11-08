@@ -198,7 +198,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   margin: 2rem;
 }
 
@@ -256,7 +256,8 @@
 .titulo {
   color: var(--blanco-1);
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
   font-family: var(--Titulo);
   width: 100%;
   text-align: start;
@@ -265,7 +266,7 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: calc(1.3rem * 3);
+  min-height: calc(1.6*0.9rem * 2);
 }
 
 .enlacesCard {
@@ -314,15 +315,15 @@
   color: var(--negro-1);
   margin: 0;
   line-height: 1.6;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-family: var(--Texto);
   text-align: start;
   font-weight: 600;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: calc(1.6 * 0.6rem * 6);
+  min-height: calc(1.6 * 0.7rem * 7);
 }
 
 .imagen {
@@ -387,7 +388,7 @@
   .nombre {
     color: var(--blanco-1);
     font-family: var(--Titulo);
-    font-size: 3.2rem;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
     margin: 0;
     -webkit-text-stroke: 0.1rem var(--negro-1);
@@ -590,11 +591,17 @@
   .titulo {
     color: var(--blanco-1);
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    line-height: 1.6;
     font-family: var(--Titulo);
     width: 100%;
     text-align: start;
     font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: calc(1.6*1.3rem * 1);
   }
 
   .enlacesCard {
@@ -642,7 +649,7 @@
     color: var(--negro-1);
     margin: 0;
     line-height: 1.6;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: var(--Texto);
     text-align: start;
     font-weight: 600;
@@ -650,7 +657,7 @@
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    min-height: calc(1.6 * 0.9rem * 5);
+    min-height: calc(1.6 * 1rem * 5);
   }
 
   .imagen img {
@@ -897,11 +904,17 @@
   .titulo {
     color: var(--blanco-1);
     margin: 0;
-    font-size: 1.7rem;
+   font-size: 1.6rem;
+    line-height: 1.6;
     font-family: var(--Titulo);
     width: 100%;
     text-align: start;
     font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: calc(1.6*1.6rem * 1);
   }
 
   .enlacesCard {
@@ -949,15 +962,15 @@
     color: var(--negro-1);
     margin: 0;
     line-height: 1.6;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-family: var(--Texto);
     text-align: start;
     font-weight: 600;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    min-height: calc(1.6 * 0.9rem * 3);
+    min-height: calc(1.6 * 1.2rem * 4);
   }
 
   .imagen img {

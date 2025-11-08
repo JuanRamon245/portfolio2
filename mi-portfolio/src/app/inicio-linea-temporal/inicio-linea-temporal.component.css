@@ -230,7 +230,7 @@
     font-family: var(--Titulo);
     padding-top: 3vh;
     padding-bottom: 8vh;
-    font-size: 3.2rem;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
     margin: 0;
     -webkit-text-stroke: 0.1rem var(--negro-1);
@@ -473,7 +473,7 @@
   .titulo {
     color: var(--blanco-1);
     font-family: var(--Titulo);
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: left;
     margin-right: 3rem;
   }
