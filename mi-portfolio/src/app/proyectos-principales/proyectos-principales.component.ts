@@ -36,8 +36,56 @@ export class ProyectosPrincipalesComponent {
 
   recursos = [
     { 
-      nombre: 'App de gestion de restaurantes', 
-      descripcion: 'Aplicacion movil, diseñada para la gestion interna de un local, como puede ser un bar o restaurante, para que se tenga una gestión virtual de las comandas entre los trabajadores.', 
+      nombre: 'Transportes Delivery', 
+      descripcion: 'Web enfocada a ofrecer servicios de transporte y entregas en la isla. Contribuí en la maquetación visual, realizando el footer, la cabecera y la página de Servicios. Me centré en mantener una interfaz clara y coherente en todas las pantallas.', 
+      img: 'undraw_website-visitors_qy9c.svg',
+      enlace: null,
+      url: 'https://transportesdelivery.com',
+      tecnologias: [
+        { 
+          nombre: 'Bricks 2.0', 
+          logo: 'logos/bricksLogo.png' 
+        },
+        { 
+          nombre: 'Asana', 
+          logo: 'logos/asanaLogo.png' 
+        },
+        { 
+          nombre: 'Wordpress', 
+          logo: 'logos/wordpressLogo.png' 
+        }
+      ]
+    }, { 
+      nombre: 'Acortador de URLs Online', 
+      descripcion: 'Aplicación que permite crear y gestionar URLs acortadas con usuario y panel personal. Implementé autenticación, historial y funciones de edición y recuperación de cuenta. El sistema garantiza seguridad y uso estable en el día a día.', 
+      img: 'undraw_website_27ju.svg',
+      enlace: 'https://github.com/JuanRamon245/AcortadorURLOnline',
+      url: 'https://juanramon245.github.io/AcortadorURLOnline/#',
+      tecnologias: [
+        { 
+          nombre: 'Github', 
+          logo: 'logos/gitLogo.png' 
+        },
+        { 
+          nombre: 'Firebase', 
+          logo: 'logos/firebaseLogo.png' 
+        },
+        { 
+          nombre: 'Springboot', 
+          logo: 'logos/springbootLogo.png' 
+        },
+        { 
+          nombre: 'Angular', 
+          logo: 'logos/angularLogo.png' 
+        },
+        { 
+          nombre: 'Visual Studio', 
+          logo: 'logos/vscodeLogo.png' 
+        }
+      ]
+    }, { 
+      nombre: 'Aplicación de Gestión de Restaurantes', 
+      descripcion: 'Aplicación móvil orientada a la gestión interna de pedidos en bares o restaurantes. Permite organizar, enviar y visualizar comandas entre los distintos trabajadores del local, facilitando la coordinación y reduciendo errores manuales.', 
       img: 'undraw_mobile-application_uc2q.svg',
       enlace: 'https://github.com/JuanRamon245/Cocinegocios',
       url: null,
@@ -53,62 +101,6 @@ export class ProyectosPrincipalesComponent {
           logo: 'logos/gitLogo.png' 
         }
       ]
-    }, { 
-      nombre: 'Acortador de URLs', 
-      descripcion: 'Web con funcion de acortar URLs, introduciondose primero una y luego se proporciona la acortada, pudiendose usar hasta 10 veces y tras esto se eliminará la URL acortada. En este proyecto me encargue yo del Back.', 
-      img: 'undraw_building-websites_k2zp.svg',
-      enlace: 'https://github.com/JuanRamon245/aplicacionRecortarURLs',
-      url: 'https://youtube.com',
-      tecnologias: [
-        { 
-          nombre: 'Fork', 
-          logo: 'logos/forkLogo.png' 
-        },
-        { 
-          nombre: 'Java', 
-          logo: 'logos/javaLogo.png' 
-        },
-        { 
-          nombre: 'Jakarta EE', 
-          logo: 'logos/jakartaLogo.png' 
-        },
-        { 
-          nombre: 'PHPMyAdmin', 
-          logo: 'logos/PhpMyAdminLogo.png' 
-        },
-        { 
-          nombre: 'IntelliJ', 
-          logo: 'logos/intellijLogo.png' 
-        }
-      ]
-    }, { 
-      nombre: 'TIenda online', 
-      descripcion: 'Tienda online, que se puede hacer compras y gestionar el pedido del usuario, pagar y funciones basicas que podria tener una web de estas caracteristicas.', 
-      img: 'undraw_website_27ju.svg',
-      enlace: 'https://github.com/JuanRamon245/Tienda-online-prototipo',
-      url: null,
-      tecnologias: [
-        { 
-          nombre: 'Fork', 
-          logo: 'logos/forkLogo.png' 
-        },
-        { 
-          nombre: 'Java', 
-          logo: 'logos/javaLogo.png' 
-        },
-        { 
-          nombre: 'Jakarta EE', 
-          logo: 'logos/jakartaLogo.png' 
-        },
-        { 
-          nombre: 'MySQL', 
-          logo: 'logos/mySQlLogo.png' 
-        },
-        { 
-          nombre: 'IntelliJ', 
-          logo: 'logos/intellijLogo.png' 
-        }
-      ]
-    },
+    }
   ];
 }

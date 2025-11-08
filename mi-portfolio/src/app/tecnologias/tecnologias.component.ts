@@ -33,6 +33,11 @@ export class TecnologiasComponent {
 
   backendWeb = [
     {
+      nombre: 'JakartaEE',
+      logo: 'logos/jakartaLogo.png',
+      nivelConocimientos: 2
+    },
+    {
       nombre: 'Spring',
       logo: 'logos/springLogo.png',
       nivelConocimientos: 2
@@ -92,11 +97,6 @@ export class TecnologiasComponent {
       nivelConocimientos: 3
     },
     {
-      nombre: 'JakartaEE',
-      logo: 'logos/jakartaLogo.png',
-      nivelConocimientos: 2
-    },
-    {
       nombre: 'Firebase',
       logo: 'logos/firebaseLogo.png',
       nivelConocimientos: 2
@@ -106,6 +106,16 @@ export class TecnologiasComponent {
       logo: 'logos/postmanLogo.svg',
       nivelConocimientos: 3
     },
+    {
+      nombre: 'Bricks',
+      logo: 'logos/bricksLogo.png',
+      nivelConocimientos: 2
+    },
+    {
+      nombre: 'Asana',
+      logo: 'logos/asanaLogo.png',
+      nivelConocimientos: 2
+    }
   ];
 
   IDEs = [
@@ -128,6 +138,11 @@ export class TecnologiasComponent {
       nombre: 'Spyder',
       logo: 'logos/spyderLogo.png',
       nivelConocimientos: 1
+    },
+    {
+      nombre: 'Wordpress',
+      logo: 'logos/wordpressLogo.png',
+      nivelConocimientos: 2
     }
   ];
 
