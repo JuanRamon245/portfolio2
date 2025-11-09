@@ -394,7 +394,7 @@
     margin: 0;
     -webkit-text-stroke: 0.1rem var(--negro-1);
     text-shadow:
-      0.3rem 0.3rem 0 var(--color-1),
+      0.25rem 0.25rem 0 var(--color-1),
       0rem 0rem 0 var(--color-1),
       0rem 0rem 0 var(--color-1),
       0rem 0rem 0 var(--color-1);
@@ -708,7 +708,7 @@
     margin: 0;
     -webkit-text-stroke: 0.15rem var(--negro-1);
     text-shadow:
-      0.5rem 0.5rem 0 var(--color-1),
+      0.4rem 0.4rem 0 var(--color-1),
       0rem 0rem 0 var(--color-1),
       0rem 0rem 0 var(--color-1),
       0rem 0rem 0 var(--color-1);

@@ -30,8 +30,12 @@ export class ProyectosPrincipalesComponent {
   activeSlide = 0;
 
   onSlide(event: any) {
-    const index = parseInt(event.current.replace('ngb-slide-', ''), 10);
-    this.activeSlide = index;
+    const id = event?.currentSlide || event?.current;
+    if (!id) return;
+    const match = id.match(/\d+$/);
+    if (match) {
+      this.activeSlide = parseInt(match[0], 10);
+    }
   }
 
   recursos = [

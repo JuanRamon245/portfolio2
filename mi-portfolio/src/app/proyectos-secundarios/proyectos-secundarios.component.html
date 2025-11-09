@@ -9,7 +9,7 @@
             </div>
             <div class="contenedorCarrusel">
                 <ngb-carousel #carrusel [interval]="10000" [pauseOnHover]="true" [wrap]="true" [showNavigationArrows]="false" [showNavigationIndicators]="false" (slide)="onSlide($event)">
-                    <ng-template ngbSlide *ngFor="let recurso of recursos">
+                    <ng-template ngbSlide *ngFor="let recurso of recursos; let i = index" [id]="'secundario-' + i">
                         <div class="card">
                             <div class="titular">
                                 <span class="titulo">{{ recurso.nombre }}</span>

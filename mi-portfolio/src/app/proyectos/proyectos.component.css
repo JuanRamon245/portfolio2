@@ -4,13 +4,14 @@
   justify-content: center;
   align-items: center;
   transition: opacity 1s ease, transform 1s ease;
-  opacity: 1;
-  transform: translateY(0);
-  padding-bottom: 5vh;
-  padding-top: 5vh;
-}
-
-.slide:not(.visible) {
   opacity: 0;
   transform: translateY(10px);
+  overflow: hidden;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+}
+
+.slide.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

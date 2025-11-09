@@ -14,7 +14,7 @@
 }
 
 .material-symbols-outlined, .material-symbols-rounded {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .menu {
@@ -48,13 +48,13 @@
   background: var(--negro-1);
   border: none;
   border-radius: 40%;
-  width: 7vh;
-  height: 7vh;
+  width: 6vh;
+  height: 6vh;
   min-width: 3rem;
   min-height: 3rem;
   cursor: pointer;
   border: 0.1rem solid var(--color-2);
-  margin-right: -12rem;
+  margin-right: -13rem;
   margin-top: 1rem;
   display: flex;
   align-items: center;
@@ -107,6 +107,10 @@
   border: 0.1rem solid var(--color-2);
 }
 
+.contenedorMenuLateral:not(.collapsed) .logoBoton {
+  margin-right: -4.5rem;
+}
+
 @keyframes pulsoEnergetico {
   0% {
     transform: scale(1);
@@ -140,13 +144,13 @@
     background: var(--negro-1);
     border: none;
     border-radius: 40%;
-    width: 7vh;
-    height: 7vh;
-    min-width: 6rem;
-    min-height: 6rem;
+    width: 6vh;
+    height: 6vh;
+    min-width: 5rem;
+    min-height: 5rem;
     cursor: pointer;
     border: 0.1rem solid var(--color-2);
-    margin-right: -8rem;
+    margin-right: -9rem;
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -156,13 +160,31 @@
   }
 
  .menuPrincipal {
-    margin-top: 15vh;
+    margin-top: 6vh;
     list-style: none;
     padding: 2vh 2vw;
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 3vh;
+  }
+
+  .menu {
+    background: var(--negro-1);
+    width: 23vw;
+    min-width: 22rem;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    border: 0.1rem solid var(--color-1);
+    box-shadow: 0.063rem 0 0.75rem 0 var(--negro-2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .contenedorMenuLateral:not(.collapsed) .logoBoton {
+    margin-right: -6rem;
   }
 }
 

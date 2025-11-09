@@ -22,8 +22,7 @@ interface Recurso {
   standalone: true,
   imports: [CommonModule, NgbCarouselModule],
   templateUrl: './proyectos-secundarios.component.html',
-  styleUrl: './proyectos-secundarios.component.css',
-  
+  styleUrl: './proyectos-secundarios.component.css'
 })
 export class ProyectosSecundariosComponent {
   constructor(private http: HttpClient) {}
@@ -31,14 +30,18 @@ export class ProyectosSecundariosComponent {
   activeSlide = 0;
 
   onSlide(event: any) {
-    const index = parseInt(event.current.replace('ngb-slide-', ''), 10);
-    this.activeSlide = index;
+    const id = event?.currentSlide || event?.current;
+    if (!id) return;
+    const match = id.match(/\d+$/);
+    if (match) {
+      this.activeSlide = parseInt(match[0], 10);
+    }
   }
 
   recursos: Recurso[] = [
      { 
       nombre: 'Acortador de URLs', 
-      descripcion: 'Primer prototipo funcional de un sistema de acortamiento, desarrollado inicialmente para uso local. Permitía introducir una URL, generar una versión acortada y utilizarla hasta 10 veces antes de eliminarse automáticamente. Me encargué principalmente del desarrollo backend.', 
+      descripcion: 'Primer prototipo funcional de un sistema de acortamiento, en localhost. Permitía introducir una URL, generar una versión acortada y utilizarla un numero limitado de veces. Estuve de encargado del backend.', 
       img: 'undraw_building-websites_k2zp.svg',
       enlace: 'https://github.com/JuanRamon245/aplicacionRecortarURLs',
       url: null,

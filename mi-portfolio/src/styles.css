@@ -19,7 +19,7 @@ html.lenis {
   --negro-1: rgba(22, 24, 26);
   --negro-2: rgb(7, 7, 7);
   --blanco-1: rgb(238, 242, 250);
-  --Titulos: "Oswald", sans-serif;
+  --Titulo: "Chakra Petch", sans-serif;
   --Texto: "Lato", sans-serif;
 }
 
@@ -72,53 +72,101 @@ body {
 
 .animaciones .animacion {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: var(--blanco-1);
+  font-size: 1.8rem;
+  color: var(--color-1);
   opacity: 0.8;
-  border-radius: 2px;
   animation: fall 6s linear infinite;
+  display: none;
 }
 
 .animaciones .animacion:nth-child(1) {
+  top: -5%;
   left: 5%;
   animation-duration: 6s;
   animation-delay: 0s;
-}
-
-.animaciones .animacion:nth-child(2) {
-  left: 10%;
-  animation-duration: 7s;
-  animation-delay: 1s;
-}
-
-.animaciones .animacion:nth-child(3) {
-  left: 15%;
-  animation-duration: 8s;
-  animation-delay: 2s;
+  display: block;
 }
 
 .animaciones .animacion:nth-child(4) {
-  left: 90%;
+  top: -5%;
+  left: 35%;
   animation-duration: 5.5s;
   animation-delay: 0.5s;
+  display: block;
 }
 
-.animaciones .animacion:nth-child(5) {
-  left: 85%;
-  animation-duration: 6.5s;
-  animation-delay: 2s;
+.animaciones .animacion:nth-child(7) {
+  top: -5%;
+  left: 65%;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  display: block;
 }
 
-.animaciones .animacion:nth-child(6) {
+.animaciones .animacion:nth-child(10) {
+  top: -5%;
   left: 95%;
-  animation-duration: 8s;
-  animation-delay: 1.5s;
+  animation-duration: 6.5s;
+  animation-delay: 2.5s;
+  display: block;
+}
+
+@media (min-width: 768px) {
+
+  .animaciones .animacion:nth-child(2) {
+    top: -5%;
+    left: 15%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    display: block;
+  }
+
+  .animaciones .animacion:nth-child(5) {
+    top: -5%;
+    left: 45%;
+    animation-duration: 6.5s;
+    animation-delay: 2s;
+    display: block;
+  }
+
+  .animaciones .animacion:nth-child(6) {
+    top: -5%;
+    left: 55%;
+    animation-duration: 8s;
+    animation-delay: 1.5s;
+    display: block;
+  }
+
+  .animaciones .animacion:nth-child(9) {
+    top: -5%;
+    left: 85%;
+    animation-duration: 4.5s;
+    animation-delay: 1.5s;
+    display: block;
+  }
+}
+
+@media (min-width: 1500px) {
+  .animaciones .animacion:nth-child(3) {
+    top: -5%;
+    left: 25%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    display: block;
+  }
+
+  .animaciones .animacion:nth-child(8) {
+    top: -5%;
+    left: 75%;
+    animation-duration: 8.5s;
+    animation-delay: 0.5s;
+    display: block;
+  }
 }
 
 @keyframes fall {
   0% {
-    top: -50px;
+    top: 0vh;
     transform: scale(1) rotate(0deg);
     opacity: 0.8;
   }
