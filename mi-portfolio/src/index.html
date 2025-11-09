@@ -64,6 +64,13 @@
 
 </head>
 <body class="mat-typography">
+  <script type="text/javascript">
+    if (sessionStorage.redirect) {
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      history.replaceState(null, '', '/Repositorio-Portfolio' + redirect);
+    }
+  </script>
   <div class="background"></div>
   <div class="animaciones">
     <div class="material-symbols-outlined animacion">code</div>

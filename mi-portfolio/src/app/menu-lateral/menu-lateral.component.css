@@ -7,10 +7,12 @@
   align-items: flex-start;
   transition: transform 0.4s ease;
   z-index: 9999999;
+  pointer-events: auto;
 }
 
 .contenedorMenuLateral.collapsed {
   transform: translateX(14vw);
+  pointer-events: none;
 }
 
 .material-symbols-outlined, .material-symbols-rounded {
@@ -109,6 +111,10 @@
 
 .contenedorMenuLateral:not(.collapsed) .logoBoton {
   margin-right: -4.5rem;
+}
+
+.contenedorMenuLateral.collapsed .logoBoton {
+  pointer-events: auto;
 }
 
 @keyframes pulsoEnergetico {
