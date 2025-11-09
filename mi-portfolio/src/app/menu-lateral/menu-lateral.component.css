@@ -13,7 +13,7 @@
   transform: translateX(14vw);
 }
 
-.material-symbols-outlined {
+.material-symbols-outlined, .material-symbols-rounded {
   font-size: 3rem;
 }
 
@@ -47,7 +47,7 @@
   z-index: 1100;
   background: var(--negro-1);
   border: none;
-  border-radius: 10px;
+  border-radius: 40%;
   width: 7vh;
   height: 7vh;
   min-width: 3rem;
@@ -107,27 +107,30 @@
   border: 0.1rem solid var(--color-2);
 }
 
-@keyframes giroTriple {
+@keyframes pulsoEnergetico {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
   }
-  33.33% {
-    transform: rotate(180deg);
-  }
-  66.66% {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.25);
+    filter: blur(1px);
+    opacity: 0.8;
   }
   100% {
-    transform: rotate(480deg);
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
   }
 }
 
-.material-symbols-outlined.girar {
-  animation: giroTriple 0.7s linear;
+.material-symbols-outlined.girar, .material-symbols-rounded.girar {
+  animation: pulsoEnergetico 0.3s ease-in-out;
 }
 
 @media (min-width: 768px) {
-  .material-symbols-outlined {
+  .material-symbols-outlined, .material-symbols-rounded {
     font-size: 4rem;
   }
 
@@ -136,7 +139,7 @@
     z-index: 1100;
     background: var(--negro-1);
     border: none;
-    border-radius: 10px;
+    border-radius: 40%;
     width: 7vh;
     height: 7vh;
     min-width: 6rem;
@@ -176,7 +179,7 @@
 }
 
 @media (min-width: 1500px) {
-  .material-symbols-outlined {
+  .material-symbols-outlined, .material-symbols-rounded {
     font-size: 5rem;
   }
 

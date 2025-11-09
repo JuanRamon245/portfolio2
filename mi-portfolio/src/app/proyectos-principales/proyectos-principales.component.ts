@@ -36,26 +36,6 @@ export class ProyectosPrincipalesComponent {
 
   recursos = [
     { 
-      nombre: 'Transportes Delivery', 
-      descripcion: 'Web enfocada a ofrecer servicios de transporte y entregas en la isla. Contribuí en la maquetación visual, realizando el footer, la cabecera y la página de Servicios. Me centré en mantener una interfaz clara y coherente en todas las pantallas.', 
-      img: 'undraw_website-visitors_qy9c.svg',
-      enlace: null,
-      url: 'https://transportesdelivery.com',
-      tecnologias: [
-        { 
-          nombre: 'Bricks 2.0', 
-          logo: 'logos/bricksLogo.png' 
-        },
-        { 
-          nombre: 'Asana', 
-          logo: 'logos/asanaLogo.png' 
-        },
-        { 
-          nombre: 'Wordpress', 
-          logo: 'logos/wordpressLogo.png' 
-        }
-      ]
-    }, { 
       nombre: 'Acortador de URLs Online', 
       descripcion: 'Aplicación que permite crear y gestionar URLs acortadas con usuario y panel personal. Implementé autenticación, historial y funciones de edición y recuperación de cuenta. El sistema garantiza seguridad y uso estable en el día a día.', 
       img: 'undraw_website_27ju.svg',
@@ -81,6 +61,26 @@ export class ProyectosPrincipalesComponent {
         { 
           nombre: 'Visual Studio', 
           logo: 'logos/vscodeLogo.png' 
+        }
+      ]
+    }, { 
+      nombre: 'Transportes Delivery', 
+      descripcion: 'Web enfocada a ofrecer servicios de transporte y entregas en la isla. Contribuí en la maquetación visual, realizando el footer, la cabecera y la página de Servicios. Me centré en mantener una interfaz clara y coherente en todas las pantallas.', 
+      img: 'undraw_website-visitors_qy9c.svg',
+      enlace: null,
+      url: 'https://transportesdelivery.com',
+      tecnologias: [
+        { 
+          nombre: 'Bricks 2.0', 
+          logo: 'logos/bricksLogo.png' 
+        },
+        { 
+          nombre: 'Asana', 
+          logo: 'logos/asanaLogo.png' 
+        },
+        { 
+          nombre: 'Wordpress', 
+          logo: 'logos/wordpressLogo.png' 
         }
       ]
     }, { 

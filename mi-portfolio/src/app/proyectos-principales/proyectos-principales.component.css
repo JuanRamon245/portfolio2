@@ -321,10 +321,10 @@
   text-align: start;
   font-weight: 600;
   display: -webkit-box;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: calc(1.6 * 0.7rem * 7);
+  min-height: calc(1.6 * 0.7rem * 8);
 }
 
 .imagen {

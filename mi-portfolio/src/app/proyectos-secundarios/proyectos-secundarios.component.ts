@@ -92,13 +92,6 @@ export class ProyectosSecundariosComponent {
           logo: 'logos/intellijLogo.png' 
         }
       ]
-    }, { 
-      nombre: 'En proceso', 
-      descripcion: 'Actualmente no hay más proyectos, en un futuro se iran añadiendo y expandiendo este apartado', 
-      img: 'undraw_server-error_syuz.svg',
-      enlace: null,
-      url: null,
-      tecnologias: []
     }
   ];
 }

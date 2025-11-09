@@ -8,7 +8,7 @@
                 <div class="botonIzquierda" (click)="carrusel.prev()"></div>
             </div>
             <div class="contenedorCarrusel">
-                <ngb-carousel #carrusel [interval]="6000" [pauseOnHover]="true" [wrap]="true" [showNavigationArrows]="false" [showNavigationIndicators]="false" (slide)="onSlide($event)">
+                <ngb-carousel #carrusel [interval]="10000" [pauseOnHover]="true" [wrap]="true" [showNavigationArrows]="false" [showNavigationIndicators]="false" (slide)="onSlide($event)">
                     <ng-template ngbSlide *ngFor="let recurso of recursos">
                         <div class="card">
                             <div class="titular">
